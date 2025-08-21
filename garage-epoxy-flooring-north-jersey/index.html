@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Epoxy Flooring North Jersey | Professional Installation | Jersey Elite</title>
+    <meta name="description" content="Transform your garage with professional epoxy flooring in North Jersey. Durable, chemical-resistant coatings. Newark, Jersey City, Bergen County. Free quotes.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0099cc;
+            --primary-dark: #0077a3;
+            --secondary: #1e4080;
+            --accent: #00d4ff;
+            --text-dark: #1a1a1a;
+            --text-body: #4a5568;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text .company {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .logo-text .tagline {
+            font-size: 10px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 153, 204, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 153, 204, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(30,64,128,0.95), rgba(0,153,204,0.9));
+            color: white;
+            padding: 120px 2rem 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 64px);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 80px 2rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .lead {
+            font-size: 20px;
+            color: var(--text-body);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .benefit-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 32px;
+        }
+
+        .benefit-card h3 {
+            font-size: 24px;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        /* Process Section */
+        .process-section {
+            background: var(--bg-light);
+            padding: 80px 2rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 2rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .gallery-item {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 16px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--secondary);
+            padding: 80px 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a0a0a;
+            color: #a0aec0;
+            padding: 60px 2rem 30px;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer h4 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2d3748;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero {
+                padding: 80px 1rem 60px;
+            }
+            
+            .section {
+                padding: 60px 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../" class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#0099cc" opacity="0.1"/>
+                    <path d="M30 35 Q35 25, 45 28 T65 25 Q70 28, 72 35 L70 45 Q68 48, 65 48 L35 48 Q32 48, 30 45 Z" fill="#0099cc"/>
+                    <path d="M25 55 L75 55 Q78 55, 78 58 L78 70 Q78 75, 73 75 L27 75 Q22 75, 22 70 L22 58 Q22 55, 25 55 Z" fill="#1e4080"/>
+                    <circle cx="35" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    <circle cx="50" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    <circle cx="65" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="company">Jersey Elite Coatings</span>
+                    <span class="tagline">Garage Flooring Experts</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="../">Home</a>
+                <a href="../commercial-epoxy-flooring-north-jersey/">Commercial</a>
+                <a href="../restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a>
+                <a href="../contact/">Contact</a>
+                <a href="tel:2015550123" class="btn btn-primary">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Garage Epoxy Flooring in North Jersey</h1>
+            <p class="hero-subtitle">Transform your garage into a showroom with our durable, chemical-resistant epoxy coatings. Professional installation with lifetime warranty throughout Newark, Jersey City, Bergen County and beyond.</p>
+            
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="#quote" class="btn btn-primary">Get Free Quote</a>
+                <a href="tel:2015550123" class="btn" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white;">Call (201) 555-0123</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <h2>Why Choose Epoxy for Your Garage Floor?</h2>
+            <p class="lead">Garage epoxy flooring is the ultimate solution for homeowners who want a beautiful, durable floor that can handle anything life throws at it.</p>
+            
+            <p>Your garage floor takes a beating - from hot tires and oil spills to road salt and heavy equipment. Regular concrete simply can't handle these challenges without staining, cracking, and deteriorating. Our professional-grade epoxy coatings create a seamless, non-porous surface that's virtually indestructible.</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Chemical Resistant</h3>
+                    <p>Withstands oil, gasoline, antifreeze, and road salt without staining or damage. Perfect for vehicle storage and maintenance.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💎</div>
+                    <h3>Easy to Clean</h3>
+                    <p>Seamless surface wipes clean with just soap and water. No more scrubbing oil stains or dealing with concrete dust.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Impact Resistant</h3>
+                    <p>Handles dropped tools, heavy equipment, and daily wear without chipping or cracking. Built to last decades.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Beautiful Finish</h3>
+                    <p>Choose from solid colors, decorative flakes, or stunning metallic finishes to match your style and increase home value.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">❄️</div>
+                    <h3>Weather Resistant</h3>
+                    <p>Handles North Jersey's harsh winters and hot summers without cracking, peeling, or fading. UV-stable formulations available.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Lifetime Warranty</h3>
+                    <p>We stand behind our work with a lifetime warranty against peeling and delamination. Professional installation guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2>Our Professional Installation Process</h2>
+            <p class="lead">Every garage transformation follows our proven 4-step process for lasting results.</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Free Consultation</h4>
+                    <p>On-site evaluation, color selection, and detailed quote. We assess your garage and discuss your vision.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Surface Preparation</h4>
+                    <p>Diamond grinding, crack repair, and proper surface profiling. This critical step ensures maximum adhesion.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Epoxy Application</h4>
+                    <p>Professional application of primer, base coat, and your chosen decorative elements using commercial-grade equipment.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Final Inspection</h4>
+                    <p>Quality control check and final walkthrough. We ensure everything meets our high standards before completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2>North Jersey Garage Transformations</h2>
+            <p class="lead">See how we've transformed garages throughout North Jersey with our professional epoxy coatings.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">Bergen County Garage - Solid Gray</div>
+                <div class="gallery-item">Newark Home - Decorative Flakes</div>
+                <div class="gallery-item">Jersey City Condo - Metallic Finish</div>
+                <div class="gallery-item">Hoboken Townhouse - Blue & White</div>
+                <div class="gallery-item">Essex County - Commercial Grade</div>
+                <div class="gallery-item">Passaic Home - Custom Design</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="section">
+        <div class="container">
+            <h2>Serving All of North Jersey</h2>
+            <p class="lead">Professional garage epoxy installation throughout the region.</p>
+            
+            <h3>Primary Service Areas:</h3>
+            <ul style="columns: 2; gap: 3rem; margin: 2rem 0;">
+                <li>Newark & Essex County</li>
+                <li>Jersey City & Hudson County</li>
+                <li>Bergen County (All Towns)</li>
+                <li>Hoboken & Weehawken</li>
+                <li>Passaic County</li>
+                <li>Union County</li>
+                <li>Morris County</li>
+                <li>Middlesex County (North)</li>
+            </ul>
+            
+            <p>We also serve surrounding areas throughout Northern New Jersey. Contact us to confirm service to your location.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="quote">
+        <div class="container">
+            <h2>Ready to Transform Your Garage?</h2>
+            <p style="font-size: 20px; margin-bottom: 2rem;">Get your free consultation and see why thousands of North Jersey homeowners trust Jersey Elite Coatings.</p>
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <a href="../contact/" class="btn" style="background: white; color: var(--secondary); padding: 14px 32px;">Get Free Quote</a>
+                <a href="tel:2015550123" class="btn btn-primary" style="padding: 14px 32px;">Call (201) 555-0123</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>Jersey Elite Coatings</h4>
+                <p>Professional garage epoxy flooring serving North Jersey since 2010.</p>
+                <p style="margin-top: 1rem;">
+                    📞 <a href="tel:2015550123">(201) 555-0123</a><br>
+                    ✉️ info@jerseyelitecoatings.com
+                </p>
+            </div>
+            
+            <div>
+                <h4>Services</h4>
+                <ul style="list-style: none;">
+                    <li><a href="../garage-epoxy-flooring-north-jersey/">Garage Epoxy</a></li>
+                    <li><a href="../commercial-epoxy-flooring-north-jersey/">Commercial</a></li>
+                    <li><a href="../restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Service Areas</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#">Newark</a></li>
+                    <li><a href="#">Jersey City</a></li>
+                    <li><a href="#">Bergen County</a></li>
+                    <li><a href="#">Essex County</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Jersey Elite Coatings. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
