@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Epoxy Flooring North Jersey | Industrial Grade | Jersey Elite</title>
+    <meta name="description" content="Heavy-duty commercial epoxy flooring in North Jersey. Warehouses, retail, manufacturing. High-traffic solutions. Licensed commercial contractor. Call (201) 555-0123.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0099cc;
+            --primary-dark: #0077a3;
+            --secondary: #1e4080;
+            --accent: #00d4ff;
+            --text-dark: #1a1a1a;
+            --text-body: #4a5568;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text .company {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .logo-text .tagline {
+            font-size: 10px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 153, 204, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 153, 204, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(30,64,128,0.95), rgba(0,153,204,0.9));
+            color: white;
+            padding: 120px 2rem 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 64px);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 80px 2rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .lead {
+            font-size: 20px;
+            color: var(--text-body);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        /* Industries Grid */
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .industry-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border-left: 4px solid var(--primary);
+        }
+
+        .industry-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .industry-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 32px;
+        }
+
+        .industry-card h3 {
+            font-size: 24px;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        /* Features Section */
+        .features-section {
+            background: var(--bg-light);
+            padding: 80px 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 1rem;
+        }
+
+        /* Specifications */
+        .specs-section {
+            padding: 80px 2rem;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+
+        .spec-card {
+            background: var(--bg-light);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+
+        .spec-card h3 {
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-size: 24px;
+        }
+
+        .spec-list {
+            list-style: none;
+        }
+
+        .spec-list li {
+            padding: 0.5rem 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .spec-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--secondary);
+            padding: 80px 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a0a0a;
+            color: #a0aec0;
+            padding: 60px 2rem 30px;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer h4 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2d3748;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero {
+                padding: 80px 1rem 60px;
+            }
+            
+            .section {
+                padding: 60px 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../" class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#0099cc" opacity="0.1"/>
+                    <path d="M30 35 Q35 25, 45 28 T65 25 Q70 28, 72 35 L70 45 Q68 48, 65 48 L35 48 Q32 48, 30 45 Z" fill="#0099cc"/>
+                    <path d="M25 55 L75 55 Q78 55, 78 58 L78 70 Q78 75, 73 75 L27 75 Q22 75, 22 70 L22 58 Q22 55, 25 55 Z" fill="#1e4080"/>
+                    <circle cx="35" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    <circle cx="50" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    <circle cx="65" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="company">Jersey Elite Coatings</span>
+                    <span class="tagline">Commercial Flooring Experts</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="../">Home</a>
+                <a href="../garage-epoxy-flooring-north-jersey/">Garage Epoxy</a>
+                <a href="../restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a>
+                <a href="../contact/">Contact</a>
+                <a href="tel:2015550123" class="btn btn-primary">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Industrial-Grade Commercial Epoxy Flooring</h1>
+            <p class="hero-subtitle">Heavy-duty epoxy flooring solutions for warehouses, manufacturing facilities, retail spaces, and more. Built to withstand the toughest commercial environments throughout North Jersey.</p>
+            
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="#quote" class="btn btn-primary">Get Commercial Quote</a>
+                <a href="tel:2015550123" class="btn" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white;">Call (201) 555-0123</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Industries We Serve</h2>
+            <p class="lead">Specialized commercial epoxy flooring solutions tailored to your industry's specific needs and requirements.</p>
+            
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">🏭</div>
+                    <h3>Manufacturing & Industrial</h3>
+                    <p>Heavy-duty floors that withstand machinery, chemicals, and constant traffic. Chemical-resistant formulations for production environments.</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">📦</div>
+                    <h3>Warehouses & Distribution</h3>
+                    <p>High-traffic flooring designed for forklifts, pallet jacks, and heavy storage. Seamless surfaces for easy cleaning and maintenance.</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">🏪</div>
+                    <h3>Retail & Showrooms</h3>
+                    <p>Attractive, durable floors that handle customer traffic while maintaining a professional appearance. Custom colors and finishes available.</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">🔧</div>
+                    <h3>Automotive & Service</h3>
+                    <p>Oil and chemical-resistant flooring for auto shops, service bays, and dealerships. Easy cleanup of automotive fluids.</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">🏥</div>
+                    <h3>Healthcare & Labs</h3>
+                    <p>Seamless, antimicrobial surfaces that meet strict cleanliness standards. Chemical compatibility for laboratory environments.</p>
+                </div>
+                
+                <div class="industry-card">
+                    <div class="industry-icon">✈️</div>
+                    <h3>Aerospace & Aviation</h3>
+                    <p>High-performance floors for hangars and maintenance facilities. Fuel and chemical resistance with anti-static options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Commercial-Grade Performance</h2>
+            <p class="lead">Our commercial epoxy systems are engineered to exceed the demands of industrial environments.</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">💪</div>
+                    <h4>Heavy Traffic Rated</h4>
+                    <p>Designed for forklifts, machinery, and constant foot traffic</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🧪</div>
+                    <h4>Chemical Resistant</h4>
+                    <p>Withstands acids, solvents, oils, and cleaning chemicals</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🔥</div>
+                    <h4>Temperature Stable</h4>
+                    <p>Performs in extreme temperatures and thermal shock</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Anti-Static Options</h4>
+                    <p>ESD protection for electronics manufacturing</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🦠</div>
+                    <h4>Antimicrobial</h4>
+                    <p>Inhibits bacterial growth for healthcare applications</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🚫</div>
+                    <h4>Non-Slip Surfaces</h4>
+                    <p>Textured finishes for improved workplace safety</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specs-section">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <p class="lead">Our commercial epoxy systems meet or exceed industry standards for commercial and industrial applications.</p>
+            
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>Performance Standards</h3>
+                    <ul class="spec-list">
+                        <li>Compressive Strength: 12,000+ PSI</li>
+                        <li>Tensile Strength: 6,000+ PSI</li>
+                        <li>Abrasion Resistance: CS-17 Wear Index</li>
+                        <li>Chemical Resistance: ASTM D1308</li>
+                        <li>Impact Resistance: 160 in-lbs</li>
+                        <li>Service Temperature: -40°F to 200°F</li>
+                    </ul>
+                </div>
+                
+                <div class="spec-card">
+                    <h3>Installation Details</h3>
+                    <ul class="spec-list">
+                        <li>Thickness: 1/8" to 1/4" typical</li>
+                        <li>Cure Time: 24-72 hours</li>
+                        <li>Surface Prep: Diamond grinding required</li>
+                        <li>Primer System: 100% solids epoxy</li>
+                        <li>Topcoat: Polyurethane or epoxy</li>
+                        <li>Warranty: 5-10 years commercial</li>
+                    </ul>
+                </div>
+                
+                <div class="spec-card">
+                    <h3>Compliance & Certifications</h3>
+                    <ul class="spec-list">
+                        <li>USDA Compliant (Food Grade)</li>
+                        <li>OSHA Slip Resistance Standards</li>
+                        <li>Low VOC Emissions</li>
+                        <li>Fire Safety Ratings Available</li>
+                        <li>ISO 9001 Quality Standards</li>
+                        <li>Licensed Commercial Contractor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Process -->
+    <section class="section">
+        <div class="container">
+            <h2>Commercial Project Process</h2>
+            <p class="lead">We understand the importance of minimizing downtime for your business operations.</p>
+            
+            <h3>Phase 1: Planning & Assessment</h3>
+            <p>Comprehensive site evaluation, traffic analysis, and chemical compatibility assessment. We develop a detailed project timeline to minimize business disruption.</p>
+            
+            <h3>Phase 2: Surface Preparation</h3>
+            <p>Professional concrete preparation including shot blasting or diamond grinding, crack repair, and moisture mitigation. Proper preparation is critical for long-term performance.</p>
+            
+            <h3>Phase 3: Installation</h3>
+            <p>Application of primer, base coat, and protective topcoat using commercial-grade equipment. We can work nights or weekends to accommodate your schedule.</p>
+            
+            <h3>Phase 4: Quality Control & Handover</h3>
+            <p>Comprehensive inspection, performance testing, and documentation. We provide maintenance guidelines and warranty information.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="quote">
+        <div class="container">
+            <h2>Ready to Upgrade Your Commercial Floor?</h2>
+            <p style="font-size: 20px; margin-bottom: 2rem;">Get a detailed commercial quote from North Jersey's industrial flooring experts.</p>
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <a href="../contact/" class="btn" style="background: white; color: var(--secondary); padding: 14px 32px;">Request Commercial Quote</a>
+                <a href="tel:2015550123" class="btn btn-primary" style="padding: 14px 32px;">Call (201) 555-0123</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>Jersey Elite Coatings</h4>
+                <p>Licensed commercial contractor specializing in industrial-grade epoxy flooring throughout North Jersey.</p>
+                <p style="margin-top: 1rem;">
+                    📞 <a href="tel:2015550123">(201) 555-0123</a><br>
+                    ✉️ commercial@jerseyelitecoatings.com
+                </p>
+            </div>
+            
+            <div>
+                <h4>Services</h4>
+                <ul style="list-style: none;">
+                    <li><a href="../garage-epoxy-flooring-north-jersey/">Garage Epoxy</a></li>
+                    <li><a href="../commercial-epoxy-flooring-north-jersey/">Commercial</a></li>
+                    <li><a href="../restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Industries</h4>
+                <ul style="list-style: none;">
+                    <li><a href="#">Manufacturing</a></li>
+                    <li><a href="#">Warehouses</a></li>
+                    <li><a href="#">Retail</a></li>
+                    <li><a href="#">Automotive</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Jersey Elite Coatings. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
