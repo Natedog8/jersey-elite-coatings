@@ -1,10 +1,999 @@
-jersey-elite-coatings/
-├── index.html
-├── garage-epoxy-flooring-north-jersey/
-│   └── index.html
-├── commercial-epoxy-flooring-north-jersey/
-│   └── index.html
-├── restaurant-kitchen-epoxy-flooring/
-│   └── index.html
-└── contact/
-    └── index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoxy Flooring North Jersey | Garage, Commercial & Basement | Jersey Elite Coatings</title>
+    <meta name="description" content="Professional epoxy flooring installation in North Jersey. Garage, commercial, basement coatings. Newark, Jersey City, Bergen County. Lifetime warranty. Free quotes.">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Optimized Font Loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS Inlined -->
+    <style>
+        /* CSS Reset & Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0099cc;
+            --primary-dark: #0077a3;
+            --secondary: #1e4080;
+            --accent: #00d4ff;
+            --text-dark: #1a1a1a;
+            --text-body: #4a5568;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Base Styles */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-body);
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-dark);
+        }
+
+        h1 { font-size: clamp(32px, 5vw, 56px); }
+        h2 { font-size: clamp(28px, 4vw, 42px); }
+        h3 { font-size: clamp(24px, 3vw, 32px); }
+        h4 { font-size: clamp(20px, 2.5vw, 24px); }
+
+        p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        /* Header - Mobile First */
+        .header {
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-svg {
+            width: 45px;
+            height: 45px;
+        }
+
+        .logo-text {
+            display: none;
+            flex-direction: column;
+        }
+
+        .logo-text .company {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .logo-text .tagline {
+            font-size: 10px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Mobile Menu */
+        .menu-toggle {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: var(--text-dark);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Navigation - Mobile First */
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 320px;
+            height: 100vh;
+            background: var(--white);
+            box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+            padding: 80px 30px 30px;
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .nav-menu.active {
+            right: 0;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 15px 0;
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+            padding-left: 10px;
+        }
+
+        .nav-cta {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            font-weight: 600;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: var(--transition);
+            text-align: center;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            box-shadow: 0 4px 14px rgba(0, 153, 204, 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 153, 204, 0.35);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* Hero Section - Mobile First */
+        .hero {
+            position: relative;
+            min-height: 600px;
+            background: linear-gradient(135deg, rgba(30,64,128,0.95), rgba(0,153,204,0.95));
+            display: flex;
+            align-items: center;
+            padding: 80px 20px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,133.3C960,128,1056,96,1152,96C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        .hero-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            margin-bottom: 24px;
+            animation: fadeInUp 0.6s ease;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(18px, 2.5vw, 22px);
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 32px;
+            line-height: 1.6;
+            animation: fadeInUp 0.6s ease 0.1s both;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.6s ease 0.2s both;
+        }
+
+        .hero .btn {
+            padding: 14px 32px;
+            font-size: 16px;
+        }
+
+        .hero .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--white);
+            color: var(--white);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero .btn-secondary:hover {
+            background: var(--white);
+            color: var(--secondary);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 20px;
+            background: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 6px 16px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: clamp(16px, 2vw, 18px);
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(0, 153, 204, 0.25);
+        }
+
+        .service-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--white);
+        }
+
+        .service-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+
+        .service-card p {
+            color: var(--text-body);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .service-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .service-link:hover {
+            gap: 12px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            order: 2;
+        }
+
+        .about-image {
+            order: 1;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 32px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: var(--bg-light);
+            border-radius: 12px;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* Testimonial Section */
+        .testimonial {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            text-align: center;
+        }
+
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial-text {
+            font-size: clamp(20px, 3vw, 28px);
+            font-style: italic;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid var(--white);
+        }
+
+        .author-info {
+            text-align: left;
+        }
+
+        .author-name {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .author-location {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 80px 20px;
+            background: var(--bg-light);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 18px;
+            color: var(--text-body);
+            margin-bottom: 32px;
+        }
+
+        .cta .btn {
+            font-size: 18px;
+            padding: 16px 40px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a0a0a;
+            color: #a0aec0;
+            padding: 48px 20px 24px;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer-section h4 {
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid #2d3748;
+            font-size: 14px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Tablet Styles */
+        @media (min-width: 768px) {
+            .header-container {
+                padding: 1.25rem 2rem;
+            }
+
+            .logo-text {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: none;
+            }
+
+            .nav-menu {
+                position: static;
+                width: auto;
+                height: auto;
+                background: transparent;
+                box-shadow: none;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                overflow: visible;
+            }
+
+            .nav-menu a {
+                display: inline-block;
+                padding: 0;
+                border: none;
+                font-size: 15px;
+            }
+
+            .nav-menu a:hover {
+                padding-left: 0;
+            }
+
+            .nav-cta {
+                margin: 0;
+                display: flex;
+                gap: 16px;
+            }
+
+            .hero {
+                padding: 100px 40px;
+            }
+
+            .services {
+                padding: 80px 40px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+
+            .about {
+                padding: 80px 40px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+            }
+
+            .about-text {
+                order: 1;
+            }
+
+            .about-image {
+                order: 2;
+            }
+
+            .about-stats {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 2fr 1fr 1fr;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .hero {
+                min-height: 700px;
+                padding: 120px 40px;
+            }
+        }
+
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .header, .nav-menu, .hero-cta, .cta, .footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#0099cc" opacity="0.1"/>
+                    <path d="M30 35 Q35 25, 45 28 T65 25 Q70 28, 72 35 L70 45 Q68 48, 65 48 L35 48 Q32 48, 30 45 Z" fill="#0099cc"/>
+                    <path d="M25 55 L75 55 Q78 55, 78 58 L78 70 Q78 75, 73 75 L27 75 Q22 75, 22 70 L22 58 Q22 55, 25 55 Z" fill="#1e4080"/>
+                    <circle cx="35" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    <circle cx="50" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    <circle cx="65" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="company">Jersey Elite Coatings</span>
+                    <span class="tagline">Epoxy Flooring Experts</span>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#services">Services</a>
+                <a href="garage-epoxy-flooring-north-jersey/">Garage Epoxy</a>
+                <a href="commercial-epoxy-flooring-north-jersey/">Commercial</a>
+                <a href="restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a>
+                <a href="contact/">Contact</a>
+                <div class="nav-cta">
+                    <a href="tel:2015550123" class="btn btn-secondary">Call Now</a>
+                    <a href="#quote" class="btn btn-primary">Get Quote</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transform Your Floors with Premium Epoxy Coatings</h1>
+                <p class="hero-subtitle">North Jersey's trusted epoxy flooring experts. Professional installation for garages, basements, and commercial spaces. Serving Newark, Jersey City, Bergen County and beyond.</p>
+                <div class="hero-cta">
+                    <a href="#quote" class="btn btn-primary">Get Free Quote</a>
+                    <a href="garage-epoxy-flooring-north-jersey/" class="btn btn-secondary">View Our Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Professional Epoxy Solutions</h2>
+                <p class="section-subtitle">Specialized flooring systems designed for durability, beauty, and lasting performance</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12h3L12 3 2 12h3v8h14v-8z"/>
+                            <path d="M9 16h6v4H9z" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <h3>Garage Epoxy Flooring</h3>
+                    <p>Transform your garage into a showroom with our durable, chemical-resistant epoxy coatings. Perfect for vehicles and workshops.</p>
+                    <a href="garage-epoxy-flooring-north-jersey/" class="service-link">
+                        Learn More 
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10z"/>
+                        </svg>
+                    </div>
+                    <h3>Commercial Epoxy</h3>
+                    <p>High-performance flooring for restaurants, warehouses, retail spaces. Built to withstand heavy traffic and meet safety standards.</p>
+                    <a href="commercial-epoxy-flooring-north-jersey/" class="service-link">
+                        Learn More 
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2l-5.5 9h11z"/>
+                            <circle cx="17.5" cy="17.5" r="4.5"/>
+                            <path d="M3 13.5h8v8H3z"/>
+                        </svg>
+                    </div>
+                    <h3>Restaurant Kitchen Epoxy</h3>
+                    <p>Food-safe, non-slip flooring designed for commercial kitchens. Antimicrobial protection and easy cleaning for health department compliance.</p>
+                    <a href="restaurant-kitchen-epoxy-flooring/" class="service-link">
+                        Learn More 
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label">Why Choose Us</span>
+                    <h2>North Jersey's Trusted Epoxy Flooring Experts</h2>
+                    <p>With over 15 years of experience and 10,000+ successful installations, Jersey Elite Coatings has built a reputation for excellence throughout North Jersey. Our commitment to quality, professional service, and customer satisfaction sets us apart.</p>
+                    <p>We use only industrial-grade materials and proven installation techniques to ensure your epoxy floor not only looks stunning but lasts for decades. Every project is backed by our lifetime warranty against peeling and delamination.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Projects Done</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5.0</div>
+                            <div class="stat-label">Google Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #0099cc, #1e4080); border-radius: 16px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px;">Jersey Elite Team at Work</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial" id="testimonials">
+        <div class="container">
+            <div class="testimonial-content">
+                <p class="testimonial-text">"The epoxy flooring transformed our garage into a stunning space! The team was professional, clean, and exceeded our expectations. Highly recommend!"</p>
+                <div class="testimonial-author">
+                    <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; border: 3px solid white;"></div>
+                    <div class="author-info">
+                        <div class="author-name">Gabrielle C.</div>
+                        <div class="author-location">Homeowner, Madison NJ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="quote">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Floors?</h2>
+                <p>Get your free quote today and discover why thousands of North Jersey property owners trust Jersey Elite Coatings.</p>
+                <a href="contact/" class="btn btn-primary">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="#0099cc" opacity="0.2"/>
+                        <path d="M30 35 Q35 25, 45 28 T65 25 Q70 28, 72 35 L70 45 Q68 48, 65 48 L35 48 Q32 48, 30 45 Z" fill="#0099cc"/>
+                        <path d="M25 55 L75 55 Q78 55, 78 58 L78 70 Q78 75, 73 75 L27 75 Q22 75, 22 70 L22 58 Q22 55, 25 55 Z" fill="#fff"/>
+                    </svg>
+                    <span style="color: #fff; font-weight: 600;">Jersey Elite Coatings</span>
+                </div>
+                <p>Professional epoxy flooring installation throughout North Jersey. Licensed, insured, and committed to excellence.</p>
+                <p style="margin-top: 16px;">
+                    📍 8 Lombardy Street, Suite 249, Newark, NJ 07102<br>
+                    📞 <a href="tel:2015550123">(201) 555-0123</a><br>
+                    ✉️ info@jerseyelitecoatings.com
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="garage-epoxy-flooring-north-jersey/">Garage Epoxy</a></li>
+                    <li><a href="commercial-epoxy-flooring-north-jersey/">Commercial</a></li>
+                    <li><a href="restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a></li>
+                    <li><a href="contact/">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li><a href="#">Newark</a></li>
+                    <li><a href="#">Jersey City</a></li>
+                    <li><a href="#">Hoboken</a></li>
+                    <li><a href="#">Bergen County</a></li>
+                    <li><a href="#">Essex County</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Jersey Elite Coatings. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Minimal JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile menu if open
+                    menuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
