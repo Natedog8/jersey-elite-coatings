@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Jersey Elite Coatings | Free Epoxy Flooring Quote | North Jersey</title>
+    <meta name="description" content="Get your free epoxy flooring quote from Jersey Elite Coatings. Serving North Jersey with professional installation. Call (201) 555-0123 or request online quote.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0099cc;
+            --primary-dark: #0077a3;
+            --secondary: #1e4080;
+            --accent: #00d4ff;
+            --text-dark: #1a1a1a;
+            --text-body: #4a5568;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 12px;
+        }
+
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text .company {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .logo-text .tagline {
+            font-size: 10px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 153, 204, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 153, 204, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(30,64,128,0.95), rgba(0,153,204,0.9));
+            color: white;
+            padding: 120px 2rem 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(36px, 5vw, 64px);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 22px;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Contact Methods */
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-icon {
+            font-size: 24px;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 80px 2rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .lead {
+            font-size: 20px;
+            color: var(--text-body);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        /* Contact Form */
+        .contact-form-section {
+            background: var(--bg-light);
+            padding: 80px 2rem;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        /* Service Areas */
+        .service-areas {
+            padding: 80px 2rem;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 3rem 0;
+        }
+
+        .area-item {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a0a0a;
+            color: #a0aec0;
+            padding: 60px 2rem 30px;
+        }
+
+        .footer-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer h4 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2d3748;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero {
+                padding: 80px 1rem 60px;
+            }
+            
+            .section {
+                padding: 60px 1rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-methods {
+                gap: 1rem;
+            }
+
+            .contact-method {
+                padding: 0.75rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="../" class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#0099cc" opacity="0.1"/>
+                    <path d="M30 35 Q35 25, 45 28 T65 25 Q70 28, 72 35 L70 45 Q68 48, 65 48 L35 48 Q32 48, 30 45 Z" fill="#0099cc"/>
+                    <path d="M25 55 L75 55 Q78 55, 78 58 L78 70 Q78 75, 73 75 L27 75 Q22 75, 22 70 L22 58 Q22 55, 25 55 Z" fill="#1e4080"/>
+                    <circle cx="35" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    <circle cx="50" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    <circle cx="65" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                </svg>
+                <div class="logo-text">
+                    <span class="company">Jersey Elite Coatings</span>
+                    <span class="tagline">Get Your Free Quote</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="../">Home</a>
+                <a href="../garage-epoxy-flooring-north-jersey/">Garage Epoxy</a>
+                <a href="../commercial-epoxy-flooring-north-jersey/">Commercial</a>
+                <a href="../restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a>
+                <a href="tel:2015550123" class="btn btn-primary">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Get Your Free Epoxy Flooring Quote</h1>
+            <p class="hero-subtitle">Ready to transform your floors? Contact North Jersey's epoxy flooring experts for a free consultation and detailed quote. Professional installation with lifetime warranty.</p>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <strong>(201) 555-0123</strong><br>
+                        <small>Call for immediate service</small>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <strong>info@jerseyelitecoatings.com</strong><br>
+                        <small>Email us your project details</small>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <span class="contact-icon">⏰</span>
+                    <div>
+                        <strong>Same-Day Response</strong><br>
+                        <small>Quick quotes and scheduling</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Request Your Free Quote</h2>
+            <p class="lead">Fill out the form below and we'll contact you within 24 hours with a detailed quote for your project.</p>
+            
+            <div class="form-container">
+                <form class="contact-form" id="quoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Project Address</label>
+                        <input type="text" id="address" name="address" placeholder="Street address, City, State">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select project type</option>
+                                <option value="garage">Garage Epoxy Flooring</option>
+                                <option value="commercial">Commercial Epoxy Flooring</option>
+                                <option value="kitchen">Restaurant Kitchen Flooring</option>
+                                <option value="basement">Basement Epoxy Coating</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="squareFootage">Approximate Square Footage</label>
+                            <select id="squareFootage" name="squareFootage">
+                                <option value="">Select size range</option>
+                                <option value="under-500">Under 500 sq ft</option>
+                                <option value="500-1000">500-1,000 sq ft</option>
+                                <option value="1000-2000">1,000-2,000 sq ft</option>
+                                <option value="2000-5000">2,000-5,000 sq ft</option>
+                                <option value="over-5000">Over 5,000 sq ft</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="timeline">Preferred Timeline</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Select timeline</option>
+                            <option value="asap">As soon as possible</option>
+                            <option value="1-2-weeks">1-2 weeks</option>
+                            <option value="1-month">Within 1 month</option>
+                            <option value="2-3-months">2-3 months</option>
+                            <option value="planning">Just planning / researching</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project, current floor condition, color preferences, special requirements, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px; font-size: 18px;">
+                        Request Free Quote
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Contact Information</h2>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:2015550123">(201) 555-0123</a></p>
+                            <small>Mon-Fri 8AM-6PM, Sat 9AM-4PM</small>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@jerseyelitecoatings.com">info@jerseyelitecoatings.com</a></p>
+                            <small>24/7 - We respond within 4 hours</small>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Service Area</h4>
+                            <p>All of North Jersey</p>
+                            <small>Newark, Jersey City, Bergen County & more</small>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🛡️</div>
+                        <div>
+                            <h4>Licensed & Insured</h4>
+                            <p>NJ Contractor License #123456</p>
+                            <small>Fully licensed and insured</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="service-areas">
+        <div class="container">
+            <h2>Service Areas Throughout North Jersey</h2>
+            <p class="lead">We proudly serve homeowners and businesses throughout the North Jersey region.</p>
+            
+            <div class="areas-grid">
+                <div class="area-item">Newark</div>
+                <div class="area-item">Jersey City</div>
+                <div class="area-item">Hoboken</div>
+                <div class="area-item">Paterson</div>
+                <div class="area-item">Elizabeth</div>
+                <div class="area-item">Clifton</div>
+                <div class="area-item">Passaic</div>
+                <div class="area-item">Union City</div>
+                <div class="area-item">West New York</div>
+                <div class="area-item">Bayonne</div>
+                <div class="area-item">East Orange</div>
+                <div class="area-item">Irvington</div>
+                <div class="area-item">Bergen County</div>
+                <div class="area-item">Essex County</div>
+                <div class="area-item">Hudson County</div>
+                <div class="area-item">Passaic County</div>
+                <div class="area-item">Union County</div>
+                <div class="area-item">Morris County</div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 2rem;">Don't see your area listed? <a href="tel:2015550123" style="color: var(--primary);">Call us</a> - we likely serve your location!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>Jersey Elite Coatings</h4>
+                <p>Professional epoxy flooring installation throughout North Jersey. Get your free quote today!</p>
+                <p style="margin-top: 1rem;">
+                    📞 <a href="tel:2015550123">(201) 555-0123</a><br>
+                    ✉️ <a href="mailto:info@jerseyelitecoatings.com">info@jerseyelitecoatings.com</a>
+                </p>
+            </div>
+            
+            <div>
+                <h4>Services</h4>
+                <ul style="list-style: none;">
+                    <li><a href="../garage-epoxy-flooring-north-jersey/">Garage Epoxy</a></li>
+                    <li><a href="../commercial-epoxy-flooring-north-jersey/">Commercial</a></li>
+                    <li><a href="../restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4>Quick Links</h4>
+                <ul style="list-style: none;">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="#quote">Get Quote</a></li>
+                    <li><a href="tel:2015550123">Call Now</a></li>
+                    <li><a href="mailto:info@jerseyelitecoatings.com">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Jersey Elite Coatings. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.firstName || !data.lastName || !data.email || !data.phone || !data.projectType) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Thank you! Your quote request has been submitted. We\'ll contact you within 24 hours.');
+            
+            // In a real application, you would send this data to your server
+            console.log('Form data:', data);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
