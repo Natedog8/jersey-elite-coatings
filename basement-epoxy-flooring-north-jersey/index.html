@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basement Epoxy Flooring NJ | Waterproof Coating Systems | Jersey Elite</title>
-    <meta name="description" content="Basement epoxy flooring in New Jersey. Moisture-resistant, waterproof coatings. Transform damp basements into living spaces. Lifetime warranty. Call (973) 378-1192.">
-    <link rel="canonical" href="https://jerseyelitecoatings.com/basement-epoxy-flooring-north-jersey/">
+    <title>Commercial Epoxy Flooring NJ | Industrial Warehouse Coating | Jersey Elite</title>
+    <meta name="description" content="Commercial epoxy flooring contractor in New Jersey. Industrial warehouses, manufacturing, retail. 5-year warranty, licensed & insured. Call (973) 378-1192 for free quote.">
+    <link rel="canonical" href="https://jerseyelitecoatings.com/commercial-epoxy-flooring-north-jersey/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Basement Epoxy Flooring New Jersey - Jersey Elite Coatings">
-    <meta property="og:description" content="Professional basement epoxy flooring. Waterproof, moisture-resistant solutions. Transform your basement. Call (973) 378-1192.">
-    <meta property="og:image" content="https://jerseyelitecoatings.com/images/basement-epoxy.jpg">
-    <meta property="og:url" content="https://jerseyelitecoatings.com/basement-epoxy-flooring-north-jersey/">
+    <meta property="og:title" content="Commercial Epoxy Flooring New Jersey - Jersey Elite Coatings">
+    <meta property="og:description" content="Professional commercial epoxy flooring installation. Warehouses, manufacturing, retail. Licensed contractor. Call (973) 378-1192.">
+    <meta property="og:image" content="https://jerseyelitecoatings.com/images/commercial-epoxy.jpg">
+    <meta property="og:url" content="https://jerseyelitecoatings.com/commercial-epoxy-flooring-north-jersey/">
     <meta property="og:type" content="website">
     
     <!-- Preconnect for Performance -->
@@ -34,6 +34,10 @@
             overflow-x: hidden;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
             font-size: 16px;
@@ -42,7 +46,7 @@
             background: var(--white);
             -webkit-font-smoothing: antialiased;
             overflow-x: hidden;
-            max-width: 100%;
+            max-width: 100vw;
         }
 
         :root {
@@ -63,6 +67,21 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-body);
+            background: var(--white);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Playfair Display', Georgia, serif;
             font-weight: 700;
@@ -80,7 +99,7 @@
             line-height: 1.8;
         }
 
-        /* Header */
+        /* Header - Mobile First */
         .header {
             background: var(--white);
             box-shadow: var(--shadow-sm);
@@ -158,7 +177,7 @@
             transform: rotate(-45deg) translate(7px, -6px);
         }
 
-        /* Navigation */
+        /* Navigation - Mobile First */
         .nav-menu {
             position: fixed;
             top: 0;
@@ -232,26 +251,22 @@
             border-color: var(--primary-dark);
         }
 
-        .btn-secondary {
-            background: rgba(255,255,255,0.1);
-            border-color: var(--white);
-            color: var(--white);
-            backdrop-filter: blur(10px);
+        .btn-outline {
+            background: transparent;
+            color: var(--text-dark);
+            border: 2px solid var(--border);
         }
 
-        .btn-secondary:hover {
-            background: var(--white);
-            color: var(--secondary);
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
         }
 
         /* Hero Section */
         .hero {
             position: relative;
             min-height: 600px;
-            background: linear-gradient(135deg, rgba(30,64,128,0.95), rgba(0,153,204,0.95)),
-                        url('images/basement-hero.jpg');
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(135deg, rgba(30,64,128,0.95), rgba(0,153,204,0.95));
             display: flex;
             align-items: center;
             padding: 80px 20px;
@@ -307,6 +322,18 @@
             font-size: 16px;
         }
 
+        .hero .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--white);
+            color: var(--white);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero .btn-secondary:hover {
+            background: var(--white);
+            color: var(--secondary);
+        }
+
         /* Trust Badges */
         .trust-badges {
             display: flex;
@@ -354,22 +381,15 @@
             margin-bottom: 16px;
         }
 
-        .lead {
-            font-size: 20px;
-            color: var(--text-body);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-
-        /* Benefits Grid */
-        .benefits-grid {
+        /* Industries Grid */
+        .industries-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 24px;
             margin-top: 48px;
         }
 
-        .benefit-card {
+        .industry-card {
             background: var(--white);
             border-radius: 16px;
             padding: 32px 24px;
@@ -380,7 +400,7 @@
             box-shadow: var(--shadow-md);
         }
 
-        .benefit-card::before {
+        .industry-card::before {
             content: '';
             position: absolute;
             top: 0;
@@ -390,12 +410,12 @@
             background: linear-gradient(90deg, var(--primary), var(--accent));
         }
 
-        .benefit-card:hover {
+        .industry-card:hover {
             transform: translateY(-8px);
             box-shadow: var(--shadow-xl);
         }
 
-        .benefit-icon {
+        .industry-icon {
             width: 80px;
             height: 80px;
             margin: 0 auto 24px;
@@ -408,45 +428,73 @@
             font-size: 36px;
         }
 
-        .benefit-card h3 {
+        .industry-card h3 {
             font-family: 'Poppins', sans-serif;
             font-size: 22px;
             margin-bottom: 12px;
             color: var(--text-dark);
         }
 
-        /* Problems Section */
-        .problems-section {
-            background: linear-gradient(135deg, #fef2f2, #fecaca);
-            padding: 60px 20px;
-        }
-
-        .problems-grid {
+        /* Features Grid */
+        .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
 
-        .problem-item {
-            background: white;
+        .feature-item {
+            text-align: center;
             padding: 2rem;
+            background: var(--bg-light);
             border-radius: 12px;
-            box-shadow: var(--shadow-md);
-            border-left: 4px solid #ef4444;
         }
 
-        .problem-icon {
+        .feature-icon {
             font-size: 48px;
             margin-bottom: 1rem;
         }
 
-        .problem-item h4 {
-            color: #dc2626;
-            margin-bottom: 1rem;
+        /* Specs Cards */
+        .specs-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
         }
 
-        /* Process Steps */
+        .spec-card {
+            background: linear-gradient(135deg, var(--white), var(--bg-light));
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .spec-list {
+            list-style: none;
+        }
+
+        .spec-list li {
+            padding: 0.75rem 0;
+            padding-left: 30px;
+            position: relative;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .spec-list li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        /* Process Timeline */
         .process-timeline {
             margin: 3rem 0;
         }
@@ -476,115 +524,6 @@
             font-size: 20px;
             margin-bottom: 0.5rem;
             color: var(--text-dark);
-        }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .feature-item {
-            text-align: center;
-            padding: 2rem;
-            background: var(--bg-light);
-            border-radius: 12px;
-        }
-
-        .feature-icon {
-            font-size: 48px;
-            margin-bottom: 1rem;
-        }
-
-        /* Before After */
-        .before-after-section {
-            background: var(--bg-light);
-            padding: 60px 20px;
-        }
-
-        .before-after-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .before-after-item {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .ba-images {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            height: 250px;
-        }
-
-        .before-img, .after-img {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            font-weight: 700;
-            color: white;
-        }
-
-        .before-img {
-            background: linear-gradient(135deg, #dc2626, #991b1b);
-        }
-
-        .after-img {
-            background: linear-gradient(135deg, #10b981, #059669);
-        }
-
-        .ba-label {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .ba-content {
-            padding: 1.5rem;
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            background: white;
-            padding: 60px 20px;
-        }
-
-        .faq-grid {
-            display: grid;
-            gap: 1.5rem;
-            margin-top: 3rem;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .faq-item {
-            background: var(--bg-light);
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .faq-question {
-            font-weight: 600;
-            color: var(--text-dark);
-            margin-bottom: 1rem;
-            font-size: 18px;
         }
 
         /* Stats Section */
@@ -619,6 +558,35 @@
         .stat-label {
             font-size: 16px;
             opacity: 0.9;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--bg-light);
+            padding: 60px 20px;
+        }
+
+        .faq-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-size: 18px;
         }
 
         /* CTA Section */
@@ -670,6 +638,11 @@
             align-items: center;
             gap: 12px;
             margin-bottom: 16px;
+        }
+
+        .footer-brand svg {
+            width: 40px;
+            height: 40px;
         }
 
         .footer-section h4 {
@@ -781,6 +754,7 @@
                 background: var(--primary-dark);
                 color: white;
             }
+        }
 
             .hero {
                 padding: 100px 40px;
@@ -790,12 +764,12 @@
                 padding: 80px 40px;
             }
 
-            .benefits-grid {
+            .industries-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 32px;
             }
 
-            .before-after-grid {
+            .specs-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -810,7 +784,7 @@
 
         /* Desktop Styles */
         @media (min-width: 1024px) {
-            .benefits-grid {
+            .industries-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
 
@@ -834,7 +808,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Basement Epoxy Flooring",
+        "name": "Commercial Epoxy Flooring",
         "provider": {
             "@type": "HomeImprovementStore",
             "name": "Jersey Elite Coatings",
@@ -854,7 +828,7 @@
             "@type": "State",
             "name": "New Jersey"
         },
-        "description": "Professional basement epoxy flooring installation. Waterproof, moisture-resistant coatings that transform damp basements into beautiful living spaces."
+        "description": "Professional commercial epoxy flooring installation for warehouses, manufacturing facilities, retail spaces, and industrial properties throughout New Jersey."
     }
     </script>
 </head>
@@ -879,7 +853,9 @@
                 <a href="/services/">Services</a>
                 <a href="/garage-epoxy-flooring-north-jersey/">Garage Epoxy</a>
                 <a href="/commercial-epoxy-flooring-north-jersey/">Commercial</a>
-                <a href="/restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a>
+                <a href="/basement-epoxy-flooring-north-jersey/">Basement</a>
+                <a href="/metallic-decorative-epoxy-north-jersey/">Metallic</a>
+                <a href="/industrial-epoxy-flooring-north-jersey/">Industrial</a>
                 <a href="/contact/">Contact</a>
                 <a href="tel:9733781192" class="nav-phone">Call Now</a>
                 <a href="#quote" class="btn btn-primary">Get Quote</a>
@@ -891,24 +867,24 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Basement Epoxy Flooring Solutions for New Jersey Homes</h1>
-                <p class="hero-subtitle">Transform your damp, unusable basement into a beautiful, waterproof living space with our moisture-resistant epoxy flooring systems. From Hoboken brownstones to Bergen County colonials, we solve New Jersey's toughest basement flooring challenges.</p>
+                <h1>Commercial Epoxy Flooring for New Jersey Businesses</h1>
+                <p class="hero-subtitle">Transform your commercial space with industrial-grade epoxy flooring. From warehouses along Route 17 to manufacturing facilities in Newark, we deliver durable, OSHA-compliant flooring solutions that withstand heavy machinery, chemical exposure, and constant traffic.</p>
                 <div class="hero-cta">
-                    <a href="#quote" class="btn btn-primary">Get Free Basement Quote</a>
-                    <a href="/gallery/" class="btn btn-secondary">View Basement Projects</a>
+                    <a href="#quote" class="btn btn-primary">Get Commercial Quote</a>
+                    <a href="/gallery/" class="btn btn-secondary">View Our Work</a>
                 </div>
                 <div class="trust-badges">
                     <div class="trust-badge">
-                        <span class="trust-badge-icon">💧</span>
-                        <span>100% Waterproof</span>
+                        <span class="trust-badge-icon">⭐</span>
+                        <span>5.0 Google Rating</span>
                     </div>
                     <div class="trust-badge">
-                        <span class="trust-badge-icon">🏠</span>
-                        <span>2,000+ Basements</span>
+                        <span class="trust-badge-icon">🏆</span>
+                        <span>5-Year Commercial Warranty</span>
                     </div>
                     <div class="trust-badge">
-                        <span class="trust-badge-icon">✅</span>
-                        <span>Lifetime Warranty</span>
+                        <span class="trust-badge-icon">🏢</span>
+                        <span>500+ Commercial Projects</span>
                     </div>
                 </div>
             </div>
@@ -918,281 +894,61 @@
     <!-- Main Content Section -->
     <section class="section">
         <div class="container">
-            <h2>Professional Basement Epoxy Flooring Installation in New Jersey</h2>
-            <p class="lead">Jersey Elite Coatings specializes in transforming New Jersey basements with moisture-resistant, waterproof epoxy flooring systems that turn problem spaces into valuable living areas.</p>
+            <h2>Professional Commercial Epoxy Flooring Installation in New Jersey</h2>
+            <p class="lead">Jersey Elite Coatings specializes in heavy-duty commercial epoxy flooring systems designed to meet the demanding requirements of New Jersey's industrial and commercial facilities.</p>
             
-            <p>New Jersey basements face unique challenges that make traditional flooring options unsuitable. The state's high water table, particularly in areas near the Hudson River, Passaic River, and along the Jersey Shore, creates persistent moisture problems that can destroy carpet, warp laminate, and cause mold growth under vinyl flooring. Our basement epoxy systems are specifically engineered to handle these moisture challenges while providing a beautiful, durable surface that lasts for decades.</p>
+            <p>New Jersey's position as a major logistics hub, with its proximity to the Port of Newark and major highways like I-95, I-80, and the New Jersey Turnpike, makes it home to thousands of warehouses, distribution centers, and manufacturing facilities. These commercial spaces require flooring that can withstand constant forklift traffic, heavy machinery, chemical spills, and the wear and tear of 24/7 operations. Our commercial epoxy flooring systems are engineered specifically for these challenges, providing a seamless, durable surface that maintains its integrity even under the most demanding conditions.</p>
 
-            <p>The Northeast's dramatic seasonal changes compound basement flooring challenges. Spring thaws and summer storms can cause water infiltration, while winter's freeze-thaw cycles create hydrostatic pressure that pushes moisture through concrete slabs. Traditional basement flooring options like carpet or wood simply cannot withstand these conditions. They absorb moisture, harbor mold, and require replacement every few years. Epoxy flooring, however, creates an impermeable barrier that protects your concrete while providing a surface that's completely resistant to moisture damage.</p>
+            <p>The Northeast's climate presents unique challenges for commercial flooring. The freeze-thaw cycles common in New Jersey, combined with road salt tracked in during winter months, can destroy inferior flooring systems. Our commercial-grade epoxy formulations are specifically designed to handle these temperature fluctuations and chemical exposures. We use 100% solids epoxy systems with a minimum thickness of 1/8 inch, ensuring your floor can handle thermal expansion and contraction without cracking or delaminating.</p>
 
-            <p>Beyond moisture resistance, basement epoxy flooring offers transformative benefits for New Jersey homeowners. The seamless, non-porous surface eliminates the musty odors common in basements by preventing mold and mildew growth. The high-gloss finish reflects light, brightening typically dark basement spaces and making them feel larger and more inviting. For homes in flood-prone areas like those near the Raritan River or in coastal communities, epoxy flooring can be quickly cleaned and sanitized after water events, unlike carpet or wood that would require complete replacement.</p>
-
-            <p>The financial impact is significant. Finishing a basement with epoxy flooring can add up to 15% to your home's value, according to New Jersey real estate professionals. In markets like Hoboken, Jersey City, and Princeton, where square footage comes at a premium, a properly finished basement can add $50,000 or more to property values. Unlike other flooring options that deteriorate in basement conditions, epoxy maintains its appearance and performance for decades, protecting your investment.</p>
+            <p>Beyond durability, commercial epoxy flooring offers significant operational advantages for New Jersey businesses. The seamless, non-porous surface eliminates cracks and crevices where bacteria can harbor, making it ideal for food processing facilities that must meet FDA and USDA requirements. The high-gloss finish reflects light, reducing lighting costs in large warehouse spaces by up to 30%. Additionally, the chemical-resistant properties of our epoxy systems mean spills can be quickly cleaned without damaging the floor, minimizing downtime and maintenance costs.</p>
         </div>
     </section>
 
-    <!-- Common Problems Section -->
-    <section class="problems-section">
-        <div class="container">
-            <h2>Common Basement Flooring Problems We Solve</h2>
-            <p class="lead">New Jersey basements present unique challenges that our epoxy systems are designed to overcome.</p>
-            
-            <div class="problems-grid">
-                <div class="problem-item">
-                    <div class="problem-icon">💧</div>
-                    <h4>Moisture & Water Damage</h4>
-                    <p>High water tables and seasonal flooding destroy traditional flooring. Our moisture-mitigating epoxy creates an impermeable barrier.</p>
-                </div>
-                
-                <div class="problem-item">
-                    <div class="problem-icon">🦠</div>
-                    <h4>Mold & Mildew Growth</h4>
-                    <p>Damp conditions foster dangerous mold. Epoxy's seamless surface prevents moisture accumulation and mold growth.</p>
-                </div>
-                
-                <div class="problem-item">
-                    <div class="problem-icon">👃</div>
-                    <h4>Musty Odors</h4>
-                    <p>That typical "basement smell" comes from moisture and mold. Epoxy eliminates the conditions that cause odors.</p>
-                </div>
-                
-                <div class="problem-item">
-                    <div class="problem-icon">🌡️</div>
-                    <h4>Temperature Fluctuations</h4>
-                    <p>Extreme temperature changes cause cracking and lifting. Our flexible epoxy systems handle thermal expansion.</p>
-                </div>
-                
-                <div class="problem-item">
-                    <div class="problem-icon">🏚️</div>
-                    <h4>Concrete Deterioration</h4>
-                    <p>Exposed concrete dusts, cracks, and stains. Epoxy protects and strengthens the concrete substrate.</p>
-                </div>
-                
-                <div class="problem-item">
-                    <div class="problem-icon">🐛</div>
-                    <h4>Pest Problems</h4>
-                    <p>Cracks and gaps harbor insects. Seamless epoxy eliminates hiding spots and entry points.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
+    <!-- Industries Section -->
     <section class="section" style="background: var(--bg-light);">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Why Choose Epoxy</span>
-                <h2>Transform Your Basement with Professional Epoxy Flooring</h2>
-                <p class="section-subtitle">Discover why thousands of New Jersey homeowners choose epoxy for their basement renovations</p>
+                <span class="section-label">Industries We Serve</span>
+                <h2>Commercial Epoxy Solutions for Every Industry</h2>
+                <p class="section-subtitle">Specialized flooring systems tailored to your industry's specific requirements and compliance standards</p>
             </div>
             
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">💧</div>
-                    <h3>100% Waterproof Protection</h3>
-                    <p>Creates an impermeable moisture barrier that protects against water damage, perfect for New Jersey's high water table areas and flood-prone regions.</p>
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">🏭</div>
+                    <h3>Manufacturing & Industrial</h3>
+                    <p>Heavy-duty epoxy floors engineered for manufacturing facilities throughout Newark's industrial corridor. Our systems withstand machinery vibration, chemical exposure, and thermal shock while maintaining slip resistance for worker safety.</p>
                 </div>
                 
-                <div class="benefit-card">
-                    <div class="benefit-icon">🏠</div>
-                    <h3>Increase Home Value</h3>
-                    <p>Add 10-15% to your property value by creating usable living space. Especially valuable in high-cost areas like Bergen County and Morris County.</p>
+                <div class="industry-card">
+                    <div class="industry-icon">📦</div>
+                    <h3>Warehouses & Distribution</h3>
+                    <p>Seamless epoxy flooring for warehouses along the I-95 corridor. Designed for constant forklift traffic, our high-build systems resist tire marks, impacts from dropped pallets, and maintain clear aisle markings for operational efficiency.</p>
                 </div>
                 
-                <div class="benefit-card">
-                    <div class="benefit-icon">✨</div>
-                    <h3>Brightens Dark Spaces</h3>
-                    <p>High-gloss finish reflects light, making basements feel larger and more inviting. Reduces lighting costs by up to 30%.</p>
+                <div class="industry-card">
+                    <div class="industry-icon">🏪</div>
+                    <h3>Retail & Showrooms</h3>
+                    <p>Decorative epoxy solutions for retail spaces in Garden State Plaza, Short Hills Mall, and beyond. Choose from solid colors, metallic finishes, or custom designs that enhance your brand while handling heavy foot traffic.</p>
                 </div>
                 
-                <div class="benefit-card">
-                    <div class="benefit-icon">🧹</div>
-                    <h3>Easy Maintenance</h3>
-                    <p>Simply mop with water - no special cleaners needed. Stain-resistant surface handles spills, pet accidents, and heavy use.</p>
+                <div class="industry-card">
+                    <div class="industry-icon">🔧</div>
+                    <h3>Automotive Service Centers</h3>
+                    <p>Chemical-resistant epoxy for auto dealerships and service centers along Route 17. Our systems resist oil, brake fluid, and automotive chemicals while providing a professional appearance that impresses customers.</p>
                 </div>
                 
-                <div class="benefit-card">
-                    <div class="benefit-icon">🛡️</div>
-                    <h3>Lifetime Durability</h3>
-                    <p>Unlike carpet or vinyl that needs replacement every 5-7 years, epoxy lasts decades with proper care. Backed by our lifetime warranty.</p>
+                <div class="industry-card">
+                    <div class="industry-icon">🏥</div>
+                    <h3>Healthcare & Laboratories</h3>
+                    <p>Antimicrobial epoxy flooring for medical facilities and research labs. Seamless, non-porous surfaces meet strict cleanliness standards while resisting harsh disinfectants and chemical reagents.</p>
                 </div>
                 
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎨</div>
-                    <h3>Design Flexibility</h3>
-                    <p>Choose from solid colors, decorative flakes, or metallic finishes. Create zones for gym, play area, or entertainment space.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Detailed Content Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Understanding Basement Moisture Issues in New Jersey</h2>
-            
-            <h3>The Science Behind Basement Moisture</h3>
-            <p>New Jersey's geology creates perfect conditions for basement moisture problems. Much of the state sits on sedimentary rock formations that hold water like a sponge. When combined with clay soils common in areas like Essex and Union counties, water doesn't drain away from foundations but instead creates hydrostatic pressure against basement walls and floors. This pressure forces moisture through concrete, which is naturally porous, creating the damp conditions that plague so many New Jersey basements.</p>
-
-            <p>Seasonal variations intensify these issues. Spring snowmelt saturates the ground, summer thunderstorms dump inches of rain in hours, and fall hurricanes bring sustained precipitation. Each season presents unique moisture challenges that traditional basement flooring cannot handle. Carpet becomes a breeding ground for mold, laminate warps and buckles, and vinyl traps moisture underneath, leading to adhesive failure and mold growth.</p>
-
-            <h3>Why Traditional Solutions Fail</h3>
-            <p>Many homeowners try DIY solutions like waterproof paint or rubber mats, but these are temporary fixes that often make problems worse. Waterproof paints trap moisture in the concrete, causing spalling and deterioration. Rubber mats hide moisture problems while mold grows underneath. Interlocking tiles leave gaps where moisture accumulates. Even professionally installed carpet with moisture barriers fails because the padding acts like a sponge, retaining any moisture that gets through.</p>
-
-            <p>The cost of repeatedly replacing failed flooring adds up quickly. The average New Jersey homeowner spends $3,000-5,000 every 5-7 years replacing water-damaged basement flooring. Over 20 years, that's $12,000-20,000 spent on temporary solutions. Our epoxy flooring systems, while having a higher initial investment, last decades with minimal maintenance, saving thousands in replacement costs.</p>
-
-            <h3>The Epoxy Advantage for Basements</h3>
-            <p>Professional-grade epoxy flooring solves basement moisture problems at their core. Our installation process begins with comprehensive moisture testing using calcium chloride and relative humidity tests. We then apply specialized moisture-mitigating primers that penetrate deep into the concrete, creating a vapor barrier that prevents moisture transmission. The epoxy itself forms a completely seamless, non-porous surface that water cannot penetrate.</p>
-
-            <p>Unlike surface coatings, our 100% solids epoxy systems bond chemically with the concrete, becoming part of the substrate rather than just sitting on top. This chemical bond is so strong that the only way to remove it is through mechanical grinding. The result is a floor that handles hydrostatic pressure, temperature fluctuations, and even minor flooding without damage.</p>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="section" style="background: var(--bg-light);">
-        <div class="container">
-            <h2>Our Comprehensive Basement Epoxy Installation Process</h2>
-            <p class="lead">Every basement requires careful preparation to ensure lasting results.</p>
-            
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h4>Moisture Assessment & Testing</h4>
-                        <p>Comprehensive moisture testing including calcium chloride tests, relative humidity probes, and thermal imaging to identify water infiltration points. This critical step determines the appropriate primer system and identifies any necessary waterproofing measures.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h4>Surface Preparation & Repairs</h4>
-                        <p>Diamond grinding to remove old coatings and create proper surface profile. All cracks are routed and filled with flexible epoxy. Uneven areas are leveled with self-leveling compound. Any active leaks are addressed with hydraulic cement.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h4>Moisture Barrier Application</h4>
-                        <p>Application of specialized moisture-mitigating epoxy primer that penetrates deep into the concrete, creating a vapor barrier. This crucial layer prevents moisture from reaching the surface and causing coating failure.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h4>Base Coat & Design Elements</h4>
-                        <p>Application of high-build 100% solids epoxy base coat. For decorative systems, we broadcast flakes or add metallic pigments at this stage. Multiple coats ensure proper thickness for maximum durability.</p>
-                    </div>
-                </div>
-                
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h4>Protective Top Coat</h4>
-                        <p>Final application of chemical-resistant polyurethane or polyaspartic top coat. This layer provides UV stability, chemical resistance, and the desired gloss level while ensuring easy maintenance for years to come.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Basement Uses Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Popular Basement Transformations with Epoxy Flooring</h2>
-            
-            <h3>Home Gyms & Fitness Studios</h3>
-            <p>New Jersey homeowners increasingly convert basements into personal fitness spaces, especially after recent years highlighted the value of home gyms. Epoxy flooring is ideal for this application - it handles dropped weights without cracking, resists rubber marks from equipment, and won't absorb sweat or odors. The seamless surface makes cleaning simple, and we can incorporate rubber tiles in weightlifting zones while maintaining the epoxy throughout traffic areas. Custom line markings for yoga, stretching zones, or equipment placement can be integrated directly into the epoxy.</p>
-
-            <h3>Entertainment & Media Rooms</h3>
-            <p>Basements make perfect entertainment spaces, and epoxy flooring enhances both aesthetics and acoustics. The hard surface doesn't absorb sound like carpet, providing better audio quality for home theaters. Metallic epoxy creates a sophisticated look that complements modern media room designs. The flooring handles spilled drinks and snacks without staining, crucial for entertaining. We often install darker colors with metallic accents to reduce screen glare while maintaining an upscale appearance.</p>
-
-            <h3>Children's Play Areas</h3>
-            <p>Parents love epoxy for basement playrooms because it's completely safe and hygienic. Unlike carpet that harbors allergens and germs, epoxy can be sanitized easily. The seamless surface has no gaps where small toys can get lost. We can create colorful zones, hopscotch patterns, or game boards directly in the flooring. The surface is comfortable for crawling babies when paired with play mats, yet durable enough for riding toys and active play.</p>
-
-            <h3>Home Offices & Studios</h3>
-            <p>With remote work becoming permanent for many New Jersey professionals, basement home offices are increasingly common. Epoxy flooring provides a professional appearance for video calls while being practical for rolling chairs and equipment. Art studios benefit from epoxy's chemical resistance - paint, solvents, and other materials clean up easily. The bright, reflective surface improves lighting conditions crucial for detailed work.</p>
-
-            <h3>In-Law Suites & Rental Units</h3>
-            <p>Creating legal accessory dwelling units (ADUs) in basements can generate significant rental income, particularly in high-demand areas near NYC transit. Epoxy flooring meets building codes for moisture resistance and durability required for rental units. The low maintenance requirements mean less work for landlords, and the modern appearance attracts quality tenants. The flooring's longevity ensures it won't need replacement between tenants.</p>
-        </div>
-    </section>
-
-    <!-- Before & After Section -->
-    <section class="before-after-section">
-        <div class="container">
-            <h2>Real Basement Transformations Across New Jersey</h2>
-            <p class="lead">See how we've solved moisture problems and created beautiful spaces.</p>
-            
-            <div class="before-after-grid">
-                <div class="before-after-item">
-                    <div class="ba-images">
-                        <div class="before-img">
-                            <span class="ba-label">BEFORE</span>
-                            <span>Water-Damaged Carpet</span>
-                        </div>
-                        <div class="after-img">
-                            <span class="ba-label">AFTER</span>
-                            <span>Metallic Epoxy System</span>
-                        </div>
-                    </div>
-                    <div class="ba-content">
-                        <h4>Hoboken Brownstone Basement</h4>
-                        <p>Chronic flooding destroyed carpet repeatedly. Our moisture-mitigating epoxy system created a waterproof entertainment space.</p>
-                    </div>
-                </div>
-                
-                <div class="before-after-item">
-                    <div class="ba-images">
-                        <div class="before-img">
-                            <span class="ba-label">BEFORE</span>
-                            <span>Cracked Concrete</span>
-                        </div>
-                        <div class="after-img">
-                            <span class="ba-label">AFTER</span>
-                            <span>Flake Epoxy Floor</span>
-                        </div>
-                    </div>
-                    <div class="ba-content">
-                        <h4>Princeton Colonial Basement</h4>
-                        <p>Severely cracked floor with moisture issues transformed into bright, modern home gym with decorative flake system.</p>
-                    </div>
-                </div>
-                
-                <div class="before-after-item">
-                    <div class="ba-images">
-                        <div class="before-img">
-                            <span class="ba-label">BEFORE</span>
-                            <span>Moldy Vinyl Tiles</span>
-                        </div>
-                        <div class="after-img">
-                            <span class="ba-label">AFTER</span>
-                            <span>Solid Color Epoxy</span>
-                        </div>
-                    </div>
-                    <div class="ba-content">
-                        <h4>Bergen County Split-Level</h4>
-                        <p>Mold growing under vinyl tiles eliminated. Clean, bright epoxy perfect for children's playroom.</p>
-                    </div>
-                </div>
-                
-                <div class="before-after-item">
-                    <div class="ba-images">
-                        <div class="before-img">
-                            <span class="ba-label">BEFORE</span>
-                            <span>Efflorescence & Stains</span>
-                        </div>
-                        <div class="after-img">
-                            <span class="ba-label">AFTER</span>
-                            <span>Designer Metallic</span>
-                        </div>
-                    </div>
-                    <div class="ba-content">
-                        <h4>Montclair Tudor Basement</h4>
-                        <p>White mineral deposits and water stains covered. Luxury metallic finish created high-end entertainment space.</p>
-                    </div>
+                <div class="industry-card">
+                    <div class="industry-icon">🍽️</div>
+                    <h3>Food Processing & Kitchens</h3>
+                    <p>USDA-compliant epoxy systems for commercial kitchens and food processing plants. Our thermal-shock resistant formulations handle hot grease spills and steam cleaning while maintaining slip resistance.</p>
                 </div>
             </div>
         </div>
@@ -1201,115 +957,164 @@
     <!-- Technical Specifications -->
     <section class="section">
         <div class="container">
-            <h2>Technical Specifications for Basement Applications</h2>
+            <h2>Commercial-Grade Performance Specifications</h2>
+            <p class="lead">Our industrial epoxy systems exceed ASTM standards and meet all commercial building requirements in New Jersey.</p>
             
-            <h3>Moisture Tolerance Standards</h3>
-            <p>Our basement epoxy systems are engineered to handle moisture vapor emission rates (MVER) up to 20 pounds per 1,000 square feet per 24 hours, far exceeding typical residential requirements. We use moisture-tolerant primers that can handle up to 99% relative humidity in the concrete substrate. This is critical for New Jersey basements where moisture levels frequently exceed the 75% RH threshold that causes standard epoxy systems to fail.</p>
-
-            <h3>Chemical Composition & Performance</h3>
-            <p>We exclusively use 100% solids, two-component epoxy systems with zero VOCs, ensuring safe indoor air quality in living spaces. The cross-linked polymer structure creates exceptional adhesion (450+ psi) and compressive strength (10,000+ psi). Our systems maintain flexibility to handle substrate movement common in residential foundations, preventing cracking and delamination that plague rigid coating systems.</p>
-
-            <h3>Thermal Properties</h3>
-            <p>Basement temperatures in New Jersey can range from near-freezing in winter to 80°F+ in summer. Our epoxy formulations handle this thermal cycling without cracking or losing adhesion. The coefficient of thermal expansion closely matches concrete, preventing differential movement that causes coating failure. For basements with radiant floor heating, we use specialized heat-resistant formulations that maintain integrity at elevated temperatures.</p>
-        </div>
-    </section>
-
-    <!-- Features Grid -->
-    <section class="section" style="background: var(--bg-light);">
-        <div class="container">
-            <h2>Advanced Features of Our Basement Epoxy Systems</h2>
-            
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">🛡️</div>
-                    <h4>Antimicrobial Protection</h4>
-                    <p>Built-in antimicrobial additives prevent mold, mildew, and bacteria growth</p>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <h3>Performance Standards</h3>
+                    <ul class="spec-list">
+                        <li>Compressive Strength: 12,000+ PSI (ASTM C579)</li>
+                        <li>Tensile Strength: 6,000+ PSI (ASTM D638)</li>
+                        <li>Flexural Strength: 8,500+ PSI (ASTM C580)</li>
+                        <li>Abrasion Resistance: 40mg loss (CS-17 wheel)</li>
+                        <li>Chemical Resistance: 98% acids, alkalis, solvents</li>
+                        <li>Impact Resistance: 160 inch-pounds</li>
+                        <li>Service Temperature: -40°F to 200°F continuous</li>
+                        <li>Coefficient of Friction: 0.6+ (ASTM D2047)</li>
+                    </ul>
                 </div>
                 
-                <div class="feature-item">
-                    <div class="feature-icon">💨</div>
-                    <h4>Breathable Technology</h4>
-                    <p>Allows concrete to breathe while blocking liquid water penetration</p>
+                <div class="spec-card">
+                    <h3>Installation Standards</h3>
+                    <ul class="spec-list">
+                        <li>Surface Preparation: Diamond grinding to CSP 3-4</li>
+                        <li>Moisture Testing: ASTM F2170 compliant</li>
+                        <li>System Thickness: 1/8" to 1/4" nominal</li>
+                        <li>Primer: 100% solids moisture-mitigating</li>
+                        <li>Base Coat: High-build self-leveling epoxy</li>
+                        <li>Top Coat: Chemical-resistant urethane</li>
+                        <li>Cure Time: 24 hours light traffic, 72 hours full</li>
+                        <li>VOC Compliance: Meets NJ environmental standards</li>
+                    </ul>
                 </div>
                 
-                <div class="feature-item">
-                    <div class="feature-icon">🎯</div>
-                    <h4>Self-Leveling Formula</h4>
-                    <p>Creates perfectly smooth surface even on uneven basement floors</p>
+                <div class="spec-card">
+                    <h3>Compliance & Certifications</h3>
+                    <ul class="spec-list">
+                        <li>OSHA Slip Resistance Standards</li>
+                        <li>USDA/FDA Food-Safe Approved</li>
+                        <li>ADA Compliant Surfaces Available</li>
+                        <li>LEED Credit Qualification</li>
+                        <li>Fire Rating: Class 1 (ASTM E648)</li>
+                        <li>Static Dissipative Options (ESD)</li>
+                        <li>New Jersey Licensed Contractor</li>
+                        <li>Fully Insured: $2M General Liability</li>
+                    </ul>
                 </div>
                 
-                <div class="feature-item">
-                    <div class="feature-icon">🌡️</div>
-                    <h4>Thermal Stability</h4>
-                    <p>Handles extreme temperature changes without cracking or peeling</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">🚫</div>
-                    <h4>Zero VOC Formula</h4>
-                    <p>Safe for indoor living spaces with no harmful off-gassing</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">⚡</div>
-                    <h4>Fast Cure Time</h4>
-                    <p>Walk on in 24 hours, full use in 72 hours</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">🧲</div>
-                    <h4>Anti-Static Options</h4>
-                    <p>ESD protection for home offices with sensitive electronics</p>
-                </div>
-                
-                <div class="feature-item">
-                    <div class="feature-icon">✨</div>
-                    <h4>Stain Resistance</h4>
-                    <p>Resists oil, wine, pet stains, and household chemicals</p>
+                <div class="spec-card">
+                    <h3>Warranty Coverage</h3>
+                    <ul class="spec-list">
+                        <li>5-Year Commercial Warranty Standard</li>
+                        <li>10-Year Extended Coverage Available</li>
+                        <li>Covers Delamination & Peeling</li>
+                        <li>Chemical Resistance Guarantee</li>
+                        <li>Wear-Through Protection</li>
+                        <li>Color Stability Warranty</li>
+                        <li>Annual Inspection Program</li>
+                        <li>24/7 Emergency Repair Service</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
+    <!-- Process Section -->
+    <section class="section" style="background: var(--bg-light);">
         <div class="container">
-            <h2>Basement Epoxy Flooring FAQs</h2>
+            <h2>Our Commercial Installation Process</h2>
+            <p class="lead">Minimal disruption to your operations with professional project management from start to finish.</p>
             
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3 class="faq-question">Can epoxy flooring be installed in a damp basement?</h3>
-                    <p>Yes, with proper preparation. We use specialized moisture-mitigating primers that create a vapor barrier, allowing installation even in basements with moisture issues. We test moisture levels and apply the appropriate primer system to ensure long-lasting adhesion. However, active water leaks must be addressed before installation.</p>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Site Assessment & Planning</h4>
+                        <p>Comprehensive evaluation of your facility including moisture testing, substrate analysis, and operational requirements. We develop a detailed project timeline that minimizes business disruption, often scheduling work during nights, weekends, or planned shutdowns.</p>
+                    </div>
                 </div>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">How much does basement epoxy flooring cost in New Jersey?</h3>
-                    <p>Basement epoxy flooring typically ranges from $4 to $8 per square foot, depending on the system chosen. Basic solid-color systems start at $4/sq ft, decorative flake systems average $5-6/sq ft, and premium metallic finishes run $7-8/sq ft. Most 800 sq ft basements cost between $3,200-$6,400 complete.</p>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Professional Surface Preparation</h4>
+                        <p>Diamond grinding or shot blasting to achieve proper concrete surface profile (CSP 3-4). All cracks are routed and filled, expansion joints are properly addressed, and moisture mitigation systems are applied where needed. This critical step ensures decades of performance.</p>
+                    </div>
                 </div>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">How long does basement epoxy installation take?</h3>
-                    <p>Most basement installations take 3-5 days. Day 1: surface preparation and repairs. Day 2: moisture barrier and primer application. Day 3: base coat and decorative elements. Day 4: final top coat. Day 5: light foot traffic allowed. Full cure for furniture and heavy use takes 7 days.</p>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Multi-Layer Application</h4>
+                        <p>Application of primer, base coat, broadcast layer (if specified), and protective topcoat. Each layer is applied at precise thickness using professional equipment. We maintain strict quality control with wet film thickness gauges and ensure proper cure between coats.</p>
+                    </div>
                 </div>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">Will epoxy flooring make my basement feel cold?</h3>
-                    <p>Epoxy flooring feels similar to the ambient temperature of your basement. While it doesn't provide insulation like carpet, it doesn't make the space colder. Many homeowners add area rugs in seating areas for warmth. Epoxy is also compatible with radiant floor heating systems for year-round comfort.</p>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Quality Assurance & Documentation</h4>
+                        <p>Final inspection including adhesion testing, thickness verification, and slip resistance measurement. We provide complete documentation including warranty certificates, maintenance guidelines, and as-built specifications for your records.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Why New Jersey Businesses Choose Our Commercial Epoxy</h2>
+            <p class="lead">Advanced features that deliver real operational benefits and ROI for your facility.</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">💪</div>
+                    <h4>Extreme Durability</h4>
+                    <p>Withstands forklifts, pallet jacks, and heavy machinery traffic without wear</p>
                 </div>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">Can epoxy handle basement flooding?</h3>
-                    <p>Yes, epoxy flooring is completely waterproof and won't be damaged by flooding. Unlike carpet or wood that must be replaced after water exposure, epoxy can be cleaned and sanitized without damage. This makes it ideal for New Jersey basements prone to occasional water infiltration during heavy storms.</p>
+                <div class="feature-item">
+                    <div class="feature-icon">🧪</div>
+                    <h4>Chemical Resistance</h4>
+                    <p>Resists 98% of industrial chemicals including acids, solvents, and oils</p>
                 </div>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">What if my basement concrete is cracked or uneven?</h3>
-                    <p>We repair all cracks and level uneven areas before applying epoxy. Cracks are routed out and filled with flexible epoxy that moves with the concrete. Low spots are filled with self-leveling compound. Severely damaged floors may require a cementitious overlay before epoxy application, which we include in our quote.</p>
+                <div class="feature-item">
+                    <div class="feature-icon">🌡️</div>
+                    <h4>Thermal Shock Resistance</h4>
+                    <p>Handles extreme temperature changes without cracking or delaminating</p>
                 </div>
                 
-                <div class="faq-item">
-                    <h3 class="faq-question">How do I maintain basement epoxy flooring?</h3>
-                    <p>Maintenance is minimal - just sweep or vacuum regularly and damp mop with water or mild detergent. No waxing or special treatments needed. For high-traffic areas, we recommend a maintenance coat every 7-10 years to keep the floor looking new. Avoid dragging sharp objects and clean spills promptly.</p>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h4>ESD/Anti-Static Options</h4>
+                    <p>Electrostatic dissipative systems for electronics manufacturing</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🦠</div>
+                    <h4>Antimicrobial Protection</h4>
+                    <p>Built-in antimicrobial additives for healthcare and food processing</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">👟</div>
+                    <h4>Slip Resistance</h4>
+                    <p>Customizable texture options meet OSHA safety requirements</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h4>Custom Colors & Markings</h4>
+                    <p>Safety zones, walkways, and company branding integrated into the floor</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🧹</div>
+                    <h4>Easy Maintenance</h4>
+                    <p>Seamless surface cleans easily, reducing maintenance costs by 60%</p>
                 </div>
             </div>
         </div>
@@ -1318,23 +1123,89 @@
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
-            <h2 style="color: white; text-align: center; margin-bottom: 3rem;">Basement Flooring Excellence</h2>
+            <h2 style="color: white; text-align: center; margin-bottom: 3rem;">Commercial Flooring Excellence Since 2010</h2>
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-number">2,000+</div>
-                    <div class="stat-label">Basements Transformed</div>
+                    <div class="stat-number">2M+</div>
+                    <div class="stat-label">Square Feet Installed</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Waterproof Protection</div>
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Commercial Projects</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">15+</div>
                     <div class="stat-label">Years Experience</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">Lifetime</div>
-                    <div class="stat-label">Warranty Coverage</div>
+                    <div class="stat-number">5★</div>
+                    <div class="stat-label">Google Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section 2 -->
+    <section class="section">
+        <div class="container">
+            <h2>Commercial Epoxy Flooring Solutions for Every New Jersey Business</h2>
+            
+            <h3>Warehouse & Distribution Center Flooring</h3>
+            <p>New Jersey's strategic location makes it America's distribution hub, with major facilities in Edison, Elizabeth, and along the I-95 corridor. These high-traffic environments demand flooring that can withstand constant forklift traffic, heavy racking systems, and the impact of dropped pallets. Our high-build epoxy systems create a monolithic surface that distributes weight evenly, preventing the cracking and pitting common with standard concrete. The seamless finish eliminates joints where moisture and chemicals can penetrate, extending the life of your concrete substrate by decades.</p>
+
+            <p>For warehouses operating multiple shifts, downtime isn't an option. We offer fast-cure epoxy formulations that allow return to service in as little as 24 hours for light traffic. Our crews work nights and weekends to complete installations without disrupting your operations. Safety markings, aisle designations, and pedestrian walkways are integrated directly into the epoxy system using different colors and textures, creating permanent visual guides that won't wear off like painted lines.</p>
+
+            <h3>Manufacturing & Industrial Facilities</h3>
+            <p>Manufacturing facilities from Paterson's textile mills to Newark's chemical plants require specialized flooring solutions. Our industrial epoxy systems are formulated to resist specific chemicals used in your processes, whether that's cutting fluids in metalworking shops, dyes in textile facilities, or corrosive chemicals in processing plants. We conduct thorough chemical resistance testing to ensure compatibility with your specific operational requirements.</p>
+
+            <p>Beyond chemical resistance, manufacturing floors must handle extreme conditions. Thermal-shock resistant formulations withstand hot materials and steam cleaning without cracking. Anti-fatigue properties can be incorporated to improve worker comfort during long shifts. For facilities requiring static control, our ESD (Electrostatic Dissipative) epoxy systems protect sensitive electronics while maintaining all the durability benefits of standard industrial epoxy.</p>
+
+            <h3>Retail & Commercial Spaces</h3>
+            <p>From boutique shops in Hoboken to anchor stores at Willowbrook Mall, retail environments need flooring that combines durability with aesthetic appeal. Our decorative epoxy options include metallic finishes that create stunning three-dimensional effects, solid colors that complement your brand identity, and custom designs that make your space memorable. The high-gloss finish not only looks impressive but also reflects light, making spaces appear larger and brighter while reducing lighting costs.</p>
+
+            <p>For high-traffic retail environments, durability is paramount. Our retail epoxy systems maintain their appearance despite thousands of daily visitors, shopping cart traffic, and seasonal decorating changes. The non-porous surface resists staining from spills, making maintenance simple and cost-effective. Unlike VCT or other commercial flooring options that require frequent stripping and waxing, epoxy flooring maintains its shine with simple daily cleaning.</p>
+
+            <h3>Healthcare & Laboratory Environments</h3>
+            <p>Medical facilities and laboratories require the highest standards of cleanliness and chemical resistance. Our healthcare-grade epoxy systems create seamless, non-porous surfaces that eliminate hiding places for bacteria and pathogens. Integral cove bases create a smooth transition from floor to wall, preventing moisture infiltration and making thorough cleaning possible. These systems meet all Joint Commission standards and can be formulated with antimicrobial additives for additional protection.</p>
+
+            <p>Research laboratories present unique challenges with exposure to harsh chemicals, biological materials, and sensitive equipment. Our chemical-resistant epoxy formulations withstand everything from concentrated acids to organic solvents. For facilities requiring it, we offer static-dissipative systems that protect sensitive equipment while maintaining chemical resistance. Color-coding can be integrated to designate different laboratory zones or safety areas.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Commercial Epoxy Flooring FAQs</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How long will commercial epoxy flooring last in a warehouse environment?</h3>
+                    <p>With proper installation and maintenance, commercial epoxy flooring typically lasts 15-20 years in warehouse environments. Heavy-traffic areas may show wear after 10-12 years but can be recoated without complete replacement. Our 5-year commercial warranty covers any defects in materials or workmanship.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">What's the cost of commercial epoxy flooring per square foot in New Jersey?</h3>
+                    <p>Commercial epoxy flooring in New Jersey typically ranges from $3.50 to $8.00 per square foot, depending on the system selected. Standard solid-color systems start at $3.50/sq ft, while specialized systems with chemical resistance, anti-static properties, or decorative finishes can reach $8.00/sq ft. Volume discounts apply for projects over 10,000 square feet.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Can you install epoxy flooring without shutting down our facility?</h3>
+                    <p>Yes, we specialize in phased installations that keep your business operational. We can work nights, weekends, or section off areas to complete the flooring in stages. Fast-cure formulations allow return to light traffic in 24 hours, with full cure in 72 hours. We'll develop a installation schedule that minimizes disruption to your operations.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">How does epoxy compare to polished concrete for commercial use?</h3>
+                    <p>While polished concrete offers durability, epoxy provides superior chemical resistance, customization options, and repairable surfaces. Epoxy creates a protective barrier over concrete, preventing moisture penetration and chemical damage. It's also more forgiving of imperfect substrates and offers better slip resistance options for safety compliance.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">What maintenance is required for commercial epoxy floors?</h3>
+                    <p>Commercial epoxy floors require minimal maintenance - daily dust mopping or auto-scrubbing with neutral pH cleaners. Deep cleaning quarterly with specialized equipment removes built-up residue. Unlike VCT or other flooring, there's no stripping, waxing, or resealing required. This reduces maintenance costs by up to 60% compared to traditional commercial flooring.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Is commercial epoxy flooring OSHA compliant for slip resistance?</h3>
+                    <p>Yes, our commercial epoxy systems can be customized to meet or exceed OSHA slip resistance requirements. We offer various aggregate broadcast options that provide texture while maintaining cleanability. Slip resistance is measured and documented using ASTM D2047 standards, with coefficients of friction typically exceeding 0.6.</p>
                 </div>
             </div>
         </div>
@@ -1343,17 +1214,17 @@
     <!-- Service Areas -->
     <section class="section">
         <div class="container">
-            <h2>Basement Epoxy Installation Throughout New Jersey</h2>
-            <p class="lead">Serving all residential areas with professional basement flooring solutions.</p>
+            <h2>Commercial Epoxy Installation Throughout New Jersey</h2>
+            <p class="lead">Serving industrial and commercial facilities across all major New Jersey business corridors.</p>
             
-            <h3>Northern New Jersey</h3>
-            <p>Bergen County: Ridgewood, Paramus, Fort Lee, Englewood, Tenafly • Passaic County: Wayne, Clifton, Paterson • Essex County: Montclair, West Orange, Millburn, Short Hills • Morris County: Morristown, Madison, Chatham, Parsippany • Hudson County: Hoboken, Jersey City, Weehawken</p>
+            <h3>Northern New Jersey Industrial Areas</h3>
+            <p>Bergen County: Hackensack, Paramus, Fort Lee, Englewood • Passaic County: Paterson, Clifton, Wayne • Essex County: Newark, East Orange, West Orange • Hudson County: Jersey City, Hoboken, Union City • Morris County: Morristown, Parsippany, Dover</p>
             
-            <h3>Central New Jersey</h3>
-            <p>Union County: Summit, Westfield, Cranford • Somerset County: Bernardsville, Basking Ridge, Warren • Middlesex County: Edison, New Brunswick, Metuchen • Mercer County: Princeton, Lawrenceville, Pennington</p>
+            <h3>Central New Jersey Distribution Hubs</h3>
+            <p>Middlesex County: Edison, New Brunswick, Perth Amboy • Union County: Elizabeth, Linden, Plainfield • Somerset County: Bridgewater, Franklin, Hillsborough • Monmouth County: Freehold, Long Branch, Red Bank</p>
             
-            <h3>Areas with High Water Tables (Special Expertise)</h3>
-            <p>Homes near the Passaic River • Properties along the Raritan River • Hudson River waterfront communities • Newark Bay area • Hackensack River towns • Shore communities prone to flooding • Low-lying areas of the Meadowlands</p>
+            <h3>Major Commercial Corridors</h3>
+            <p>Route 17 Corridor • I-95/New Jersey Turnpike • Garden State Parkway • Route 46 • I-80 • I-287 • Route 3 • Route 1 • I-78 • Route 22</p>
         </div>
     </section>
 
@@ -1361,9 +1232,9 @@
     <section class="cta" id="quote">
         <div class="container">
             <div class="cta-content">
-                <h2>Transform Your Basement Today</h2>
-                <p>Get a free moisture assessment and quote for your basement epoxy flooring project.</p>
-                <a href="/contact/" class="btn btn-primary">Get Your Free Basement Quote</a>
+                <h2>Ready to Upgrade Your Commercial Flooring?</h2>
+                <p>Get a detailed quote for your facility. Free site assessment and samples available.</p>
+                <a href="/contact/" class="btn btn-primary">Get Your Commercial Quote</a>
                 <p style="margin-top: 2rem;">Or call us directly: <a href="tel:9733781192" style="color: white; font-weight: 600;">(973) 378-1192</a></p>
             </div>
         </div>
@@ -1374,13 +1245,21 @@
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-brand">
-                    <span style="color: #fff; font-weight: 600; font-size: 20px;">Jersey Elite Coatings</span>
+                    <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="50" cy="50" r="45" fill="#0099cc" opacity="0.2"/>
+                        <path d="M30 35 Q35 25, 45 28 T65 25 Q70 28, 72 35 L70 45 Q68 48, 65 48 L35 48 Q32 48, 30 45 Z" fill="#0099cc"/>
+                        <path d="M25 55 L75 55 Q78 55, 78 58 L78 70 Q78 75, 73 75 L27 75 Q22 75, 22 70 L22 58 Q22 55, 25 55 Z" fill="#fff"/>
+                        <circle cx="35" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                        <circle cx="50" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                        <circle cx="65" cy="65" r="3" fill="#fff" opacity="0.8"/>
+                    </svg>
+                    <span style="color: #fff; font-weight: 600;">Jersey Elite Coatings</span>
                 </div>
-                <p>Professional basement epoxy flooring installation throughout New Jersey. Moisture-resistant, waterproof solutions that transform problem basements into beautiful living spaces.</p>
+                <p>Professional commercial epoxy flooring installation throughout New Jersey. Licensed, insured, and committed to excellence.</p>
                 <p style="margin-top: 16px;">
                     📍 8 Lombardy Street, Suite 249, Newark, NJ 07102<br>
                     📞 <a href="tel:9733781192">(973) 378-1192</a><br>
-                    ✉️ basement@jerseyelitecoatings.com
+                    ✉️ commercial@jerseyelitecoatings.com
                 </p>
             </div>
             
@@ -1389,8 +1268,8 @@
                 <ul>
                     <li><a href="/garage-epoxy-flooring-north-jersey/">Garage Epoxy</a></li>
                     <li><a href="/commercial-epoxy-flooring-north-jersey/">Commercial</a></li>
-                    <li><a href="/basement-epoxy-flooring-north-jersey/">Basement</a></li>
                     <li><a href="/restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a></li>
+                    <li><a href="/basement-epoxy-flooring-north-jersey/">Basement</a></li>
                     <li><a href="/metallic-decorative-epoxy-north-jersey/">Metallic</a></li>
                 </ul>
             </div>
