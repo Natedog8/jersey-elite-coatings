@@ -30,6 +30,35 @@
     
     <!-- Critical CSS Inlined (Minified) -->
     <style>*{margin:0;padding:0;box-sizing:border-box}html,body{overflow-x:hidden;width:100%}:root{--primary:#0099cc;--primary-dark:#0077a3;--secondary:#1e4080;--accent:#00d4ff;--text-dark:#1a1a1a;--text-body:#4a5568;--text-light:#718096;--bg-light:#f7fafc;--white:#fff;--border:#e2e8f0;--shadow-sm:0 1px 3px rgba(0,0,0,0.12);--shadow-md:0 4px 6px rgba(0,0,0,0.1);--shadow-lg:0 10px 15px rgba(0,0,0,0.1);--shadow-xl:0 20px 25px rgba(0,0,0,0.1);--transition:all .3s cubic-bezier(0.4,0,0.2,1)}html{scroll-behavior:smooth}body{font-family:'Poppins',-apple-system,BlinkMacSystemFont,sans-serif;font-size:16px;line-height:1.6;color:var(--text-body);background:var(--white);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;min-width:320px}h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.2;color:var(--text-dark)}h1{font-size:clamp(32px,5vw,56px)}h2{font-size:clamp(28px,4vw,42px)}h3{font-size:clamp(24px,3vw,32px)}h4{font-size:clamp(20px,2.5vw,24px)}p{margin-bottom:1.5rem;line-height:1.8}.header{background:var(--white);box-shadow:var(--shadow-sm);position:sticky;top:0;z-index:1000;transition:var(--transition);width:100%}.header-container{width:100%;max-width:1280px;margin:0 auto;padding:0.75rem 1.5rem;display:flex;justify-content:space-between;align-items:center}.logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}.logo-img{height:40px;width:auto}.menu-toggle{display:flex;flex-direction:column;gap:4px;background:0;border:0;cursor:pointer;padding:5px;z-index:1001;min-height:44px;min-width:44px;align-items:center;justify-content:center}.menu-toggle span{display:block;width:28px;height:3px;background:var(--text-dark);border-radius:2px;transition:var(--transition)}.menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.menu-toggle.active span:nth-child(2){opacity:0}.menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(7px,-6px)}.nav-menu{position:fixed;top:0;right:-100%;width:80%;max-width:320px;height:100vh;background:var(--white);box-shadow:-4px 0 20px rgba(0,0,0,0.1);padding:80px 30px 30px;transition:right .3s ease;overflow-y:auto}.nav-menu.active{right:0}.nav-menu a{display:block;padding:15px 0;color:var(--text-dark);text-decoration:none;font-weight:500;font-size:16px;border-bottom:1px solid var(--border);transition:var(--transition);min-height:48px}.nav-menu a:hover{color:var(--primary);padding-left:10px}.nav-cta{margin-top:30px;display:flex;flex-direction:column;gap:15px}.btn{display:inline-block;padding:10px 20px;font-weight:600;border-radius:6px;text-decoration:none;transition:var(--transition);text-align:center;cursor:pointer;font-size:14px;min-height:44px;white-space:nowrap}.btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:var(--white);box-shadow:0 4px 14px rgba(0,153,204,0.25)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,153,204,0.35)}.btn-secondary{background:transparent;color:var(--primary);border:2px solid var(--primary)}.btn-secondary:hover{background:var(--primary);color:var(--white)}.hero{position:relative;min-height:600px;background-image:linear-gradient(135deg,rgba(30,64,128,0.6),rgba(0,153,204,0.4)),url('/images/garage-epoxy-floor.jpg');background-size:cover;background-position:center;display:flex;align-items:center;padding:80px 20px;overflow:hidden;width:100%}.hero-container{max-width:1280px;margin:0 auto;position:relative;z-index:1;width:100%}.hero-content{max-width:700px}.hero h1{color:var(--white);margin-bottom:24px;animation:fadeInUp .6s ease;text-shadow:2px 2px 4px rgba(0,0,0,0.5)}.hero-subtitle{font-size:clamp(18px,2.5vw,22px);color:rgba(255,255,255,0.95);margin-bottom:32px;line-height:1.6;animation:fadeInUp .6s ease .1s both;text-shadow:1px 1px 3px rgba(0,0,0,0.5)}.hero-cta{display:flex;gap:20px;flex-wrap:wrap;animation:fadeInUp .6s ease .2s both}.hero .btn{padding:14px 30px;font-size:15px}.hero .btn-secondary{background:rgba(255,255,255,0.1);border-color:var(--white);color:var(--white);backdrop-filter:blur(10px)}.hero .btn-secondary:hover{background:var(--white);color:var(--secondary)}.trust-badges{display:flex;gap:30px;margin-top:40px;flex-wrap:wrap;animation:fadeInUp .6s ease .3s both}.trust-badge{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,0.9);font-size:14px;text-shadow:1px 1px 2px rgba(0,0,0,0.5)}.trust-badge svg{width:24px;height:24px;fill:var(--accent)}.services{padding:80px 20px;background:var(--bg-light);width:100%}.container{max-width:1280px;margin:0 auto;width:100%;padding:0 20px}.section-header{text-align:center;margin-bottom:48px}.section-label{display:inline-block;padding:6px 16px;background:var(--primary);color:var(--white);border-radius:20px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}.section-title{margin-bottom:16px}.section-subtitle{font-size:clamp(16px,2vw,18px);color:var(--text-light);max-width:600px;margin:0 auto}.services-grid{display:grid;grid-template-columns:1fr;gap:30px;margin-top:48px}.service-card{background:var(--white);border-radius:16px;padding:32px 24px;text-align:center;transition:var(--transition);position:relative;overflow:hidden;box-shadow:var(--shadow-md)}.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--primary),var(--accent))}.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl)}.service-icon{width:80px;height:80px;margin:0 auto 24px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));border-radius:20px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,153,204,0.25)}.service-icon svg{width:40px;height:40px;fill:var(--white)}.service-card h3{font-family:'Poppins',sans-serif;font-size:22px;margin-bottom:12px;color:var(--text-dark)}.service-card p{color:var(--text-body);margin-bottom:20px;line-height:1.6}.service-link{color:var(--primary);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:var(--transition)}.service-link:hover{gap:12px}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@media (min-width:768px){.header-container{padding:1rem 2rem}.logo-img{height:45px}.menu-toggle{display:none}.nav-menu{position:static;width:auto;max-width:none;height:auto;background:transparent;box-shadow:none;padding:0;display:flex;align-items:center;gap:20px;overflow:visible;right:auto}.nav-menu a{display:inline-block;padding:8px 10px;border:0;font-size:14px;min-height:auto}.nav-menu a:hover{padding-left:10px}.nav-cta{margin:0;display:flex;flex-direction:row;gap:10px}.btn{padding:10px 24px;font-size:14px}.hero{padding:120px 40px;min-height:700px}.services{padding:100px 40px}.services-grid{grid-template-columns:repeat(2,1fr);gap:32px}}@media (min-width:1024px){.header-container{padding:1rem 2rem}.nav-menu{gap:30px}.nav-cta{gap:15px}.services-grid{grid-template-columns:repeat(3,1fr)}.hero{min-height:750px;padding:140px 40px}}</style>
+    <style>
+        .logo { text-decoration: none; }
+        .logo-text-main {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-text-main .company {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+        .logo-text-main .tagline {
+            font-size: 10px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+        .nav-phone {
+            color: var(--text-dark) !important;
+            font-weight: 500 !important;
+        }
+         @media (min-width: 768px) {
+            .nav-phone { margin-left: 20px; }
+        }
+    </style>
     
     <!-- Async Font Loading -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap">
@@ -98,7 +127,10 @@
     <header class="header">
         <div class="header-container">
             <a href="/" class="logo" aria-label="Jersey Elite Coatings Home">
-                <img src="/images/jersey-elite-logo.png" alt="Jersey Elite Coatings" class="logo-img" width="180" height="45">
+                <div class="logo-text-main">
+                    <span class="company">Jersey Elite Coatings</span>
+                    <span class="tagline">EPOXY FLOORING EXPERTS</span>
+                </div>
             </a>
             
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
@@ -107,16 +139,16 @@
                 <span></span>
             </button>
             
-            <nav class="nav-menu" id="navMenu" role="navigation">
-                <a href="#services">Services</a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="/services/">Services</a>
                 <a href="/garage-epoxy-flooring-north-jersey/">Garage Epoxy</a>
                 <a href="/commercial-epoxy-flooring-north-jersey/">Commercial</a>
-                <a href="/restaurant-kitchen-epoxy-flooring/">Restaurant Kitchen</a>
+                <a href="/basement-epoxy-flooring-north-jersey/">Basement</a>
+                <a href="/metallic-decorative-epoxy-north-jersey/">Metallic</a>
+                <a href="/industrial-epoxy-flooring-north-jersey/">Industrial</a>
                 <a href="/contact/">Contact</a>
-                <div class="nav-cta">
-                    <a href="tel:9733781192" class="btn btn-secondary" aria-label="Call (973) 378-1192">Call Now</a>
-                    <a href="#quote" class="btn btn-primary">Get Quote</a>
-                </div>
+                <a href="tel:9733781192" class="nav-phone">Call Now</a>
+                <a href="#quote" class="btn btn-primary">Get Quote</a>
             </nav>
         </div>
     </header>
