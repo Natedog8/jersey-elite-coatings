@@ -1,0 +1,27 @@
+# Jersey Elite Coatings
+
+> Premier epoxy flooring and concrete coating company serving all of North Jersey. Licensed & insured, locally owned, installing since 2010. Services include garage epoxy flooring, metallic & decorative epoxy, full-broadcast flake systems, commercial epoxy, industrial floor coatings, basement epoxy, and restaurant kitchen flooring. Every floor is backed by a lifetime warranty against peeling and delamination.
+
+## Key facts
+- Service area: All of North Jersey — Newark, Jersey City, Hoboken, Clifton, Paterson, Montclair, Wayne, West Orange, Livingston, Ridgewood, Paramus, Morristown, and surrounding Essex, Hudson, Bergen, Passaic & Morris County towns.
+- Method: Diamond grinding surface preparation on every floor, 100% solids epoxy and polyaspartic systems, moisture testing before basement installs.
+- Credentials: Licensed & insured in New Jersey. Free on-site quotes with color & flake samples. Lifetime warranty against peeling and delamination.
+- Pricing: Residential epoxy typically $3–8 per sq ft installed; a 2-car garage (≈400 sq ft) runs $1,200–$3,200. Metallic systems $7–12 per sq ft.
+- Phone: (973) 378-1192 · Email: info@jerseyelitecoatings.com
+
+## Services
+- Garage Epoxy Flooring: /services/garage-epoxy-flooring
+- Metallic & Decorative Epoxy: /services/metallic-epoxy-flooring
+- Flake Epoxy Systems: /services/flake-epoxy-flooring
+- Commercial Epoxy Flooring: /services/commercial-epoxy-flooring
+- Industrial Epoxy Flooring: /services/industrial-epoxy-flooring
+- Basement Epoxy Flooring: /services/basement-epoxy-flooring
+- Restaurant Kitchen Epoxy: /services/restaurant-kitchen-epoxy-flooring
+
+## Cost guides
+- Epoxy flooring cost in NJ: /cost/epoxy-flooring-cost-nj
+- Garage floor epoxy cost: /cost/garage-floor-epoxy-cost
+- Epoxy vs polyaspartic: /cost/epoxy-vs-polyaspartic
+- How long does epoxy flooring last: /cost/how-long-does-epoxy-flooring-last
+- Is epoxy flooring worth it: /cost/is-epoxy-flooring-worth-it
+- Epoxy over cracked concrete: /cost/epoxy-over-cracked-concrete
