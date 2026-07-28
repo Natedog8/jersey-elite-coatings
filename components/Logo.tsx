@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "@/site.config";
 
 /**
@@ -8,7 +9,7 @@ import { site } from "@/site.config";
 export function Logo({ light = false, className = "" }: { light?: boolean; className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2.5 ${className}`}>
-      <img
+      <Image
         src={light ? "/logo-mark-light.png" : "/logo-mark.png"}
         alt=""
         width={279}

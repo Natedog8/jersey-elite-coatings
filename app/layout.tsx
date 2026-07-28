@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 import { site } from "@/site.config";
 import { JsonLd } from "@/components/JsonLd";
 import { localBusinessSchema, websiteSchema } from "@/lib/seo";
+
+/* Self-hosted variable font — no runtime Google Fonts request (faster LCP)
+   and no build-time fetch dependency. */
+const jakarta = localFont({
+  src: "./fonts/plus-jakarta-sans-latin-var.woff2",
+  weight: "200 800",
+  display: "swap",
+  variable: "--font-jakarta",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -28,7 +38,7 @@ export const metadata: Metadata = {
     title: `${site.name} | North Jersey Epoxy Flooring`,
     description:
       "Premium epoxy floor coatings for garages, businesses & basements across North Jersey. Lifetime warranty. Free quotes.",
-    images: [{ url: "/photos/garage-epoxy-floor-hero.webp" }],
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630 }],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
@@ -36,18 +46,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-        {/* Load the brand font at runtime (no build-time fetch dependency).
-            React 19 hoists these into <head>; globals.css falls back to the
-            system stack if the webfont is ever unavailable. */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-        />
-      </head>
+    <html lang="en" className={jakarta.variable}>
       <body>
         <JsonLd data={[localBusinessSchema(), websiteSchema()]} />
         {children}

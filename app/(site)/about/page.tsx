@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { site } from "@/site.config";
 import { Section, Eyebrow } from "@/components/ui";
 import { PageHero } from "@/components/PageHero";
@@ -62,11 +63,13 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="relative">
-            <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-navy-900 shadow-[var(--shadow-lift)]">
-              <img
+            <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-navy-900 shadow-[var(--shadow-lift)]">
+              <Image
                 src={featured.team.src}
                 alt="Jersey Elite Coatings crew installing an epoxy floor in North Jersey"
-                className="h-full w-full object-cover"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
               />
             </div>
             <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1.5 text-sm font-bold text-navy-800 shadow-sm backdrop-blur">
@@ -109,7 +112,7 @@ export default function AboutPage() {
         <div className="grid gap-6 sm:grid-cols-3">
           {actionPhotos.slice(0, 3).map((p) => (
             <figure key={p.src} className="card overflow-hidden">
-              <img src={p.src} alt={p.caption} className="aspect-[3/4] w-full object-cover" loading="lazy" />
+              <Image src={p.src} alt={p.caption} width={900} height={1200} sizes="(min-width: 640px) 33vw, 100vw" className="aspect-[3/4] w-full object-cover" />
               <figcaption className="px-4 py-3 text-center text-sm font-semibold text-navy-700">
                 {p.caption}
               </figcaption>

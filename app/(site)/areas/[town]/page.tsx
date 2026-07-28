@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { townBySlug, townSlugs, towns, comboServiceSlugs } from "@/data/towns";
+import { countyBySlug, countySlugs } from "@/data/counties";
+import { CountyView } from "./CountyView";
 import { services } from "@/data/services";
 import { site } from "@/site.config";
 import { Icon } from "@/lib/icons";
@@ -16,23 +19,45 @@ import { townFaqs } from "@/data/townFaqs";
 import { JsonLd } from "@/components/JsonLd";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
+/* This segment serves both towns (/areas/newark) and county hubs
+   (/areas/essex-county) — county slugs never collide with town slugs. */
 export function generateStaticParams() {
-  return townSlugs.map((town) => ({ town }));
+  return [...townSlugs, ...countySlugs].map((town) => ({ town }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ town: string }> }): Promise<Metadata> {
   const { town } = await params;
+  const c = countyBySlug(town);
+  if (c) {
+    return {
+      title: `Epoxy Flooring in ${c.name}, NJ | Garage, Commercial & Metallic`,
+      description: `Professional epoxy flooring across ${c.name}, NJ. Garage, commercial, basement & metallic systems with a lifetime warranty. Licensed, insured, free on-site quotes — call ${site.phoneDisplay}.`,
+      alternates: { canonical: `/areas/${c.slug}` },
+      openGraph: {
+        title: `Epoxy Flooring in ${c.name}, NJ — ${site.name}`,
+        description: `Garage, commercial & basement epoxy across ${c.name}. Lifetime warranty, free quotes.`,
+        images: [{ url: "/og-default.jpg" }],
+      },
+    };
+  }
   const t = townBySlug(town);
   if (!t) return {};
   return {
     title: `Epoxy Flooring in ${t.name}, NJ | Garage, Commercial & Basement`,
     description: `Professional epoxy flooring in ${t.name}, NJ. Garage, commercial, basement & metallic epoxy with a lifetime warranty. Licensed, insured, free quotes. Serving ${t.neighborhoods.slice(0, 3).join(", ")} & all of ${t.name}.`,
     alternates: { canonical: `/areas/${t.slug}` },
+    openGraph: {
+      title: `Epoxy Flooring in ${t.name}, NJ — ${site.name}`,
+      description: `Garage, commercial & basement epoxy in ${t.name}. Lifetime warranty, free quotes.`,
+      images: [{ url: "/og-default.jpg" }],
+    },
   };
 }
 
 export default async function TownPage({ params }: { params: Promise<{ town: string }> }) {
   const { town } = await params;
+  const c = countyBySlug(town);
+  if (c) return <CountyView county={c} />;
   const t = townBySlug(town);
   if (!t) notFound();
 
@@ -131,9 +156,12 @@ export default async function TownPage({ params }: { params: Promise<{ town: str
 
           <aside className="lg:sticky lg:top-28 lg:h-fit">
             <div className="card overflow-hidden p-5">
-              <img
+              <Image
                 src={featured.hero.src}
                 alt={`Epoxy garage floor installed near ${t.name}, NJ`}
+                width={1200}
+                height={900}
+                sizes="(min-width: 1024px) 40vw, 100vw"
                 className="aspect-[4/3] w-full rounded-xl object-cover"
               />
               <div className="mt-5">
@@ -204,10 +232,15 @@ export default async function TownPage({ params }: { params: Promise<{ town: str
         </div>
       </Section>
 
-      {/* nearby towns */}
+      {/* nearby towns + county hub */}
       <Section className="bg-navy-50/40">
         <h2 className="text-2xl font-extrabold text-navy-900">Also serving near {t.name}</h2>
         <div className="mt-5 flex flex-wrap gap-3">
+          {countySlugs.includes(t.county.toLowerCase().replace(" ", "-")) && (
+            <Link href={`/areas/${t.county.toLowerCase().replace(" ", "-")}`} className="btn btn-outline font-bold text-aqua-700">
+              <Icon.pin className="h-4 w-4" /> All of {t.county}
+            </Link>
+          )}
           {t.nearby.map((n) => {
             const match = towns.find((x) => x.name === n);
             return match ? (

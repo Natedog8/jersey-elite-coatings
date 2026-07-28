@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/site.config";
 import { Icon } from "@/lib/icons";
 import { Container, Button, StarRow } from "@/components/ui";
@@ -27,11 +28,13 @@ export default function HomePage() {
       {/* ── HERO — full-bleed cover photo (real North Jersey install) ── */}
       <section className="relative overflow-hidden text-white">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/photos/garage-epoxy-floor-hero.webp"
             alt="Flake epoxy garage floor installed in North Jersey"
-            className="h-full w-full object-cover"
-            fetchPriority="high"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-950/92 via-navy-900/78 to-navy-900/35" />
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-navy-950/80 to-transparent" />

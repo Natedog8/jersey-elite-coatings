@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { site } from "@/site.config";
 import { Icon } from "@/lib/icons";
 import { Container, StarRow } from "@/components/ui";
@@ -52,10 +53,13 @@ export default function QuotePage() {
           </ul>
 
           <div className="mt-8 hidden lg:block">
-            <img
+            <Image
               src={featured.hero.src}
               alt="Flake epoxy garage floor installed in North Jersey"
-              className="w-full rounded-2xl object-cover shadow-[var(--shadow-lift)]"
+              width={1200}
+              height={900}
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              className="h-auto w-full rounded-2xl object-cover shadow-[var(--shadow-lift)]"
             />
           </div>
 

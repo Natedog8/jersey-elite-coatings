@@ -55,9 +55,9 @@
   --color-muted: #51688a;
 
   /* ── Type ──────────────────────────────────────────────── */
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: "Plus Jakarta Sans", var(--font-sans);
+  --font-sans: var(--font-jakarta, "Plus Jakarta Sans"), ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: var(--font-sans);
 
   /* ── Radii / shadows ───────────────────────────────────── */
   --radius-lg: 1rem;

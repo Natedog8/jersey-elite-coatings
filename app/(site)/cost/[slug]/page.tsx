@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: c.question,
     description: c.shortAnswer.slice(0, 158),
     alternates: { canonical: `/cost/${c.slug}` },
+    openGraph: { title: c.question, description: c.shortAnswer.slice(0, 158), images: [{ url: "/og-default.jpg" }] },
   };
 }
 

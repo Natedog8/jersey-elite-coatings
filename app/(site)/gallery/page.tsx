@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Section, Eyebrow, Button } from "@/components/ui";
 import { PageHero } from "@/components/PageHero";
 import { CTABand } from "@/components/sections";
@@ -40,11 +41,12 @@ export default function GalleryPage() {
           {galleryPhotos.map((t) => (
             <figure key={t.src} className="card group overflow-hidden">
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img
+                <Image
                   src={t.src}
                   alt={t.caption}
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  loading="lazy"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 50vw"
+                  className="object-cover transition duration-500 group-hover:scale-105"
                 />
                 {t.service && (
                   <span className="absolute left-2.5 top-2.5 rounded-full bg-navy-900/70 px-2.5 py-1 text-[11px] font-bold text-white backdrop-blur">
@@ -75,7 +77,7 @@ export default function GalleryPage() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {actionPhotos.map((p) => (
             <figure key={p.src} className="card overflow-hidden">
-              <img src={p.src} alt={p.caption} className="aspect-[3/4] w-full object-cover" loading="lazy" />
+              <Image src={p.src} alt={p.caption} width={900} height={1200} sizes="(min-width: 640px) 25vw, 100vw" className="aspect-[3/4] w-full object-cover" />
               <figcaption className="px-4 py-3 text-center text-sm font-semibold text-navy-700">
                 {p.caption}
               </figcaption>

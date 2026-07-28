@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { services, serviceBySlug, serviceSlugs } from "@/data/services";
 import { towns } from "@/data/towns";
 import { site } from "@/site.config";
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: `${s.name} in North Jersey | From $${s.priceFrom}/sq ft`,
     description: `${s.intro.slice(0, 155)}`,
     alternates: { canonical: `/services/${s.slug}` },
-    openGraph: { title: `${s.name} — ${site.name}`, description: s.tagline },
+    openGraph: { title: `${s.name} — ${site.name}`, description: s.tagline, images: [{ url: s.photo }] },
   };
 }
 
@@ -118,9 +119,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
           <aside className="lg:sticky lg:top-28 lg:h-fit">
             <div className="card overflow-hidden p-5">
-              <img
+              <Image
                 src={s.photo}
                 alt={`${s.name} — recent North Jersey install`}
+                width={1200}
+                height={900}
+                sizes="(min-width: 1024px) 40vw, 100vw"
                 className="aspect-[4/3] w-full rounded-xl object-cover"
               />
               <div className="mt-5 flex items-baseline justify-between border-b border-navy-50 pb-4">

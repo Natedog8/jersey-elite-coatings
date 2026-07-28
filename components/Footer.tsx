@@ -2,6 +2,7 @@ import Link from "next/link";
 import { site } from "@/site.config";
 import { services } from "@/data/services";
 import { towns } from "@/data/towns";
+import { counties } from "@/data/counties";
 import { Icon } from "@/lib/icons";
 import { Logo } from "./Logo";
 
@@ -42,6 +43,11 @@ export function Footer() {
         </FooterCol>
 
         <FooterCol title="Service Areas">
+          {counties.map((c) => (
+            <FooterLink key={c.slug} href={`/areas/${c.slug}`}>
+              {c.name}
+            </FooterLink>
+          ))}
           {towns.map((t) => (
             <FooterLink key={t.slug} href={`/areas/${t.slug}`}>
               {t.name}

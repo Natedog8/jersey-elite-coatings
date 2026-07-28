@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/site.config";
 import { services, type Service } from "@/data/services";
 import { towns } from "@/data/towns";
@@ -81,11 +82,12 @@ export function ServiceCard({ s }: { s: Service }) {
   return (
     <Link href={`/services/${s.slug}`} className="card card-hover group flex flex-col overflow-hidden">
       <div className="relative h-36 w-full overflow-hidden">
-        <img
+        <Image
           src={s.photo}
           alt={`${s.name} — North Jersey`}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-          loading="lazy"
+          fill
+          sizes="(min-width: 1024px) 25vw, 100vw"
+          className="object-cover transition duration-500 group-hover:scale-105"
         />
         <span className="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/90 text-aqua-700 shadow-sm backdrop-blur">
           <I className="h-5 w-5" />
@@ -275,11 +277,12 @@ export function ProjectShowcase({
         {items.map((t) => (
           <figure key={t.src} className="card group overflow-hidden">
             <div className="relative aspect-[4/3] overflow-hidden">
-              <img
+              <Image
                 src={t.src}
                 alt={t.caption}
-                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                loading="lazy"
+                fill
+                sizes="(min-width: 1024px) 25vw, 50vw"
+                className="object-cover transition duration-500 group-hover:scale-105"
               />
               {t.service && (
                 <span className="absolute left-2.5 top-2.5 rounded-full bg-navy-900/70 px-2.5 py-1 text-[11px] font-bold text-white backdrop-blur">
@@ -319,7 +322,7 @@ export function ProcessStrip({ items = actionPhotos.slice(0, 3) }: { items?: Til
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((t) => (
           <figure key={t.src} className="card overflow-hidden">
-            <img src={t.src} alt={t.caption} className="aspect-[4/3] w-full object-cover" loading="lazy" />
+            <Image src={t.src} alt={t.caption} width={1200} height={900} sizes="(min-width: 640px) 33vw, 100vw" className="aspect-[4/3] w-full object-cover" />
             <figcaption className="px-4 py-3 text-center text-sm font-semibold text-navy-700">
               {t.caption}
             </figcaption>

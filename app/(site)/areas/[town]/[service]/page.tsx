@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { townBySlug, townSlugs, comboServiceSlugs } from "@/data/towns";
 import { serviceBySlug, services } from "@/data/services";
 import { site } from "@/site.config";
@@ -30,6 +31,11 @@ export async function generateMetadata({
     title: `${s.shortName} in ${t.name}, NJ | ${site.shortName}`,
     description: `Professional ${s.name.toLowerCase()} in ${t.name}, NJ. ${s.tagline}. Licensed, insured & backed by a lifetime warranty. Free on-site quotes — call ${site.phoneDisplay}.`,
     alternates: { canonical: `/areas/${t.slug}/${s.slug}` },
+    openGraph: {
+      title: `${s.shortName} in ${t.name}, NJ — ${site.name}`,
+      description: s.tagline,
+      images: [{ url: s.photo }],
+    },
   };
 }
 
@@ -111,9 +117,12 @@ export default async function ComboPage({
 
           <aside className="lg:sticky lg:top-28 lg:h-fit">
             <div className="card overflow-hidden p-5">
-              <img
+              <Image
                 src={s.photo}
                 alt={`${s.name} install near ${t.name}, NJ`}
+                width={1200}
+                height={900}
+                sizes="(min-width: 1024px) 40vw, 100vw"
                 className="aspect-[4/3] w-full rounded-xl object-cover"
               />
               <div className="mt-5 flex items-baseline justify-between border-b border-navy-50 pb-4">
