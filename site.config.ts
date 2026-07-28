@@ -44,7 +44,7 @@ export const site = {
   // ── Reputation (surfaced in trust bars — no fabricated schema counts) ─
   rating: 5.0,
   yearsLine: "Serving New Jersey since 2010",
-  jobsCompleted: "10,000+",
+  jobsCompleted: "Tons of floors",
 
   // ── Trust / credentials ─────────────────────────────────────────────
   licensed: true,
@@ -57,7 +57,7 @@ export const site = {
     "Licensed & Insured",
     "Lifetime Warranty",
     "Free On-Site Quotes",
-    "10,000+ Projects Completed",
+    "Five-Star Reviews",
   ],
 
   // ── Conversion offer (shown on hero + CTA bands) ─────────────────────
