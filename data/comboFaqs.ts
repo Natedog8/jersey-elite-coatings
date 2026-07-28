@@ -86,7 +86,7 @@ const byService: Record<string, (t: Town) => [QA, QA]> = {
     },
     {
       q: `Will two ${t.name} metallic floors ever look the same?`,
-      a: `No, and that's the point. Mica pigments are hand-moved through self-levelling clear resin, so the veining and movement are one-off by definition — we can match a palette and a character, but not reproduce a specific floor, and no honest installer can claim otherwise. What we do agree before install day is the color direction and the intensity of the effect, worked on a sample on your own slab.`,
+      a: `No, and that's the point. Mica pigments are hand-moved through self-leveling clear resin, so the veining and movement are one-off by definition — we can match a palette and a character, but not reproduce a specific floor, and no honest installer can claim otherwise. What we do agree before install day is the color direction and the intensity of the effect, worked on a sample on your own slab.`,
     },
   ],
 

@@ -1,4 +1,5 @@
 import type { Town } from "./towns";
+import { townOverrides } from "./townOverrides";
 
 /**
  * Town × service body copy.
@@ -73,12 +74,12 @@ const garage: Record<Town["profile"], Gen> = {
     heading: `${t.name} garages finished to the standard of the house`,
     body: [
       `In ${t.name}, the garage increasingly gets treated as part of the house rather than a place to keep the salt out of the car. That shows up in what people specify: designer flake blends instead of stock gray, stem walls and curbs coated so there is no raw concrete edge showing, steps and aprons finished to match, and metallic upgrades on the bays that actually get seen.`,
-      `The building stock pushes the other way, though. A lot of the most desirable ${t.name} homes — especially around ${t.hook} — have original garage slabs that need genuine crack routing, spall repair and levelling before any of the finish work matters. We quote the structural prep and the finish separately so you can see exactly what you are paying for, and decide where the money goes.`,
+      `The building stock pushes the other way, though. A lot of the most desirable ${t.name} homes — especially around ${t.hook} — have original garage slabs that need genuine crack routing, spall repair and leveling before any of the finish work matters. We quote the structural prep and the finish separately so you can see exactly what you are paying for, and decide where the money goes.`,
     ],
     local: [
       `Three-car and estate garages around ${n(t, 0)} and ${n(t, 1)}`,
       `Coated stem walls, curbs, steps and aprons for a fully finished look`,
-      `Century-old slabs repaired and levelled before any coating goes down`,
+      `Century-old slabs repaired and leveled before any coating goes down`,
     ],
   }),
   "commercial-hub": (t) => ({
@@ -304,7 +305,7 @@ const metallic: Record<Town["profile"], Gen> = {
   dense: (t) => ({
     heading: `Metallic over the concrete you already have in ${t.name}`,
     body: [
-      `Converted buildings around ${t.hook} are full of exposed concrete that owners want to keep exposed but not keep bare. Metallic epoxy threads that: the slab stays the floor, but with colour, depth and movement worked into it by hand and a sealed seamless surface over the top. In a space where the walls are brick and the ceiling is joists, it reads correctly in a way tile never does.`,
+      `Converted buildings around ${t.hook} are full of exposed concrete that owners want to keep exposed but not keep bare. Metallic epoxy threads that: the slab stays the floor, but with color, depth and movement worked into it by hand and a sealed seamless surface over the top. In a space where the walls are brick and the ceiling is joists, it reads correctly in a way tile never does.`,
       `It is also doing practical work in ${t.name}. A metallic system is a full epoxy build, which means it carries the same vapor management as any other floor this close to the water — the decorative layer sits on a properly primed and prepared slab, not directly on raw concrete. Bars and restaurants here have taken to it for both reasons at once: it looks like stone and it sanitizes with a mop.`,
     ],
     local: [
@@ -317,7 +318,7 @@ const metallic: Record<Town["profile"], Gen> = {
     heading: `Where metallic fits in a ${t.name} home`,
     body: [
       `In ${t.name} metallic usually turns up in two places: the garage bay that gets seen, and the basement that is being finished as real living space. They call for different treatments of the same system. A garage floor is finished in gloss, where the depth and the wet look are the point. A basement is usually taken down to satin, where the same pour reads as honed stone instead.`,
-      `Either way it is hand-worked — mica pigments moved through self-levelling clear resin, which is why no two floors match and why we bring physical samples to your house rather than asking you to choose from a photograph. It looks genuinely different under warm and cool light, so we lay the samples on your actual slab, in your actual lighting, before anything is ordered.`,
+      `Either way it is hand-worked — mica pigments moved through self-leveling clear resin, which is why no two floors match and why we bring physical samples to your house rather than asking you to choose from a photograph. It looks genuinely different under warm and cool light, so we lay the samples on your actual slab, in your actual lighting, before anything is ordered.`,
     ],
     local: [
       `Showpiece garage bays around ${n(t, 0)} and ${n(t, 1)}`,
@@ -340,7 +341,7 @@ const metallic: Record<Town["profile"], Gen> = {
   "commercial-hub": (t) => ({
     heading: `Metallic floors that earn their keep in ${t.name}`,
     body: [
-      `Along ${t.hook}, a metallic floor is a commercial decision rather than a decorative one. In a showroom or retail space it reflects light through the room, makes the space read larger, and photographs better than any solid colour will — which is why we install more of it for ${t.name} businesses than for ${t.name} homeowners.`,
+      `Along ${t.hook}, a metallic floor is a commercial decision rather than a decorative one. In a showroom or retail space it reflects light through the room, makes the space read larger, and photographs better than any solid color will — which is why we install more of it for ${t.name} businesses than for ${t.name} homeowners.`,
       `The question people ask is whether it survives the traffic, and the answer is that the metallic layer never takes the wear in the first place. The clear topcoat does, and for commercial work we build that heavy and specify it for the traffic the floor actually sees. Every several years a recoat of the clear refreshes the whole floor without touching the artwork underneath it.`,
     ],
     local: [
@@ -360,5 +361,10 @@ const matrix: Record<string, Record<Town["profile"], Gen>> = {
 };
 
 export function townServiceAngle(t: Town, serviceSlug: string): TownServiceAngle | undefined {
+  /* A hand-written override for this exact town always wins. Towns sharing a
+     profile would otherwise read the same paragraphs with a name swapped —
+     see data/townOverrides.ts for which towns have bespoke copy and why. */
+  const override = townOverrides[t.slug]?.[serviceSlug];
+  if (override) return override;
   return matrix[serviceSlug]?.[t.profile]?.(t);
 }

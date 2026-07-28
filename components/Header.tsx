@@ -97,7 +97,7 @@ export function Header() {
           </NavDrop>
 
           <TopLink href="/cost">Pricing</TopLink>
-          <TopLink href="/gallery">Gallery</TopLink>
+          <TopLink href="/finishes">Finishes</TopLink>
           <TopLink href="/reviews">Reviews</TopLink>
           <TopLink href="/about">About</TopLink>
         </nav>
@@ -136,7 +136,9 @@ export function Header() {
             />
             {[
               ["/cost", "Pricing"],
+              ["/finishes", "Finishes"],
               ["/gallery", "Gallery"],
+              ["/why-epoxy-floors-fail", "Why Floors Fail"],
               ["/reviews", "Reviews"],
               ["/about", "About"],
               ["/contact", "Contact"],

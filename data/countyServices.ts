@@ -230,7 +230,7 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
     "metallic-epoxy-flooring": {
       lede: "Metallic reads as a design finish in a Jersey City loft — and as a moisture-proof one, which matters more here.",
       body: [
-        "Converted industrial buildings in Jersey City and Hoboken are full of exposed concrete that owners want to keep exposed but not keep bare. Metallic epoxy is the finish that threads it: the slab stays the floor, but with depth, colour and movement worked into it by hand, and a seamless sealed surface over the top. In a loft where the walls are brick and the ceiling is joists, it reads correctly in a way tile never does.",
+        "Converted industrial buildings in Jersey City and Hoboken are full of exposed concrete that owners want to keep exposed but not keep bare. Metallic epoxy is the finish that threads it: the slab stays the floor, but with depth, color and movement worked into it by hand, and a seamless sealed surface over the top. In a loft where the walls are brick and the ceiling is joists, it reads correctly in a way tile never does.",
         "It's also doing real work. A metallic system is a full epoxy build, which means the same vapor management as any other Hudson floor — the decorative layer sits on top of a properly primed and prepared slab. Bars and restaurants in the county have taken to it for the same combination of reasons: it photographs beautifully and it sanitizes with a mop.",
       ],
       local: [
@@ -300,7 +300,7 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
     "commercial-epoxy-flooring": {
       lede: "The Route 3, 46 and 23 corridors are where Passaic County does business — and where floors get judged.",
       body: [
-        "Highway-corridor retail is a different animal from a walkable main street. Showrooms, big-box adjacencies, auto dealers, gyms and furniture floors along Route 3 and Route 46 are large open spans under bright light, which means every seam, patch and wax swirl is visible from across the room. Seamless high-build epoxy in a brand-matched colour eliminates all of it, and it never needs stripping or waxing again.",
+        "Highway-corridor retail is a different animal from a walkable main street. Showrooms, big-box adjacencies, auto dealers, gyms and furniture floors along Route 3 and Route 46 are large open spans under bright light, which means every seam, patch and wax swirl is visible from across the room. Seamless high-build epoxy in a brand-matched color eliminates all of it, and it never needs stripping or waxing again.",
         "Passaic commercial buildings also tend to have been through several tenants, so the substrate is a layer cake — old VCT and adhesive, tile mortar, previous coatings, patches. That all comes off mechanically before anything goes down. On the operations side we schedule around trading hours, phase large floors in sections, and can add line striping, walkway definition and logo inlays under the same topcoat.",
       ],
       local: [
@@ -349,7 +349,7 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
       lede: "Metallic is the finish Passaic County reaches for when a space has to make an impression.",
       body: [
         "Most of our metallic work in this county isn't residential — it's commercial. Showrooms along Route 3 and 46, salons and studios in Clifton and Wayne, restaurant and bar floors in Paterson and Passaic. In a retail environment a metallic floor does something a solid color can't: it draws the eye down, reflects light through the whole space, and photographs extremely well, which matters more every year.",
-        "On the residential side it turns up in Wayne and Totowa basements being finished as real living space, usually in satin. Either way the install is the same discipline: full mechanical prep, a pigmented base, mica pigments hand-worked through self-levelling clear resin, then a high-build clear topcoat. Metallic is temperature-sensitive while it levels, so we condition the space rather than pouring into whatever the weather is doing.",
+        "On the residential side it turns up in Wayne and Totowa basements being finished as real living space, usually in satin. Either way the install is the same discipline: full mechanical prep, a pigmented base, mica pigments hand-worked through self-leveling clear resin, then a high-build clear topcoat. Metallic is temperature-sensitive while it levels, so we condition the space rather than pouring into whatever the weather is doing.",
       ],
       local: [
         "Retail and auto showroom floors on the Route 3 and Route 46 corridors",
@@ -387,7 +387,7 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
       lede: "Bergen County garages get finished to living-space standard more often than anywhere else we work.",
       body: [
         "In Ridgewood, Wyckoff, Franklin Lakes and Saddle River, the garage is increasingly treated as part of the house. That shows up in what gets specified: designer flake blends rather than stock gray, coated stem walls and containment curbs so there's no raw concrete edge visible, matching steps and aprons, and metallic upgrades on the bays that get seen. It's a different brief from sealing a slab, and it changes the quote.",
-        "The building stock cuts the other way, though. A lot of Bergen's most desirable homes are older center-hall colonials with original garage slabs, and those slabs need genuine crack routing, spall repair and levelling before any of the finish work matters. We quote the prep separately and honestly so you can see what you're paying for structure versus what you're paying for looks.",
+        "The building stock cuts the other way, though. A lot of Bergen's most desirable homes are older center-hall colonials with original garage slabs, and those slabs need genuine crack routing, spall repair and leveling before any of the finish work matters. We quote the prep separately and honestly so you can see what you're paying for structure versus what you're paying for looks.",
       ],
       local: [
         "Three-car and estate garages in Franklin Lakes, Saddle River and Alpine",
@@ -467,7 +467,7 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
       lede: "Metallic is the most-requested finish in Bergen County, and the one that most needs to be seen in person.",
       body: [
         "Between the showroom corridor and the estate towns, Bergen asks for more metallic work than any other county we serve. In a garage it turns the floor into the feature. In a retail or salon space it reflects light through the room and photographs like polished stone. In a basement, dropped to satin, it reads as honed concrete with depth and movement worked through it.",
-        "The one thing we insist on is samples on site. Metallic is a hand-worked finish — pigments are moved through self-levelling clear resin, so the same colour combination lands differently on every floor, and it looks completely different under warm and cool light. We bring physical samples to the quote and lay them on your actual slab, in your actual lighting, because choosing from a photograph is how people end up disappointed with a floor that's technically exactly what they asked for.",
+        "The one thing we insist on is samples on site. Metallic is a hand-worked finish — pigments are moved through self-leveling clear resin, so the same color combination lands differently on every floor, and it looks completely different under warm and cool light. We bring physical samples to the quote and lay them on your actual slab, in your actual lighting, because choosing from a photograph is how people end up disappointed with a floor that's technically exactly what they asked for.",
       ],
       local: [
         "Showpiece garage floors in Franklin Lakes, Saddle River and Alpine",
@@ -504,7 +504,7 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
     "garage-epoxy-flooring": {
       lede: "Morris County garages are big enough that the per-square-foot math changes what's worth doing.",
       body: [
-        "A four-bay estate garage in Harding or Mendham is two or three times the floor of a standard suburban two-car, and that scale works in your favour. Mobilization, grinding setup and crew time don't scale linearly with area, so the price per square foot falls as the floor grows. It's why premium systems — designer flake blends, metallic, coated walls and curbs — are genuinely affordable here in a way they aren't on a 400-square-foot slab.",
+        "A four-bay estate garage in Harding or Mendham is two or three times the floor of a standard suburban two-car, and that scale works in your favor. Mobilization, grinding setup and crew time don't scale linearly with area, so the price per square foot falls as the floor grows. It's why premium systems — designer flake blends, metallic, coated walls and curbs — are genuinely affordable here in a way they aren't on a 400-square-foot slab.",
         "These garages also tend to hold cars worth protecting, which changes the spec at the top of the system. Hot-tire pickup and topcoat ambering matter much more when the vehicle sits in one spot for months at a time. We finish collector garages in aliphatic polyaspartic that won't yellow, and we build for the point loads from lifts and jack stands rather than assuming a car's footprint.",
       ],
       local: [
@@ -530,7 +530,7 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
       ],
       faq: {
         q: "Can you do a four-bay garage in one day, or is that only for small floors?",
-        a: "Four bays is realistic for a one-day polyaspartic install provided the slab is sound and we bring enough crew — it's a manpower question more than a chemistry one. What breaks the schedule is unexpected repair: significant crack routing, spall patching or levelling adds time that no fast-cure product removes. We walk the floor before quoting specifically so we can commit to one day or tell you honestly that it's two.",
+        a: "Four bays is realistic for a one-day polyaspartic install provided the slab is sound and we bring enough crew — it's a manpower question more than a chemistry one. What breaks the schedule is unexpected repair: significant crack routing, spall patching or leveling adds time that no fast-cure product removes. We walk the floor before quoting specifically so we can commit to one day or tell you honestly that it's two.",
       },
     },
     "commercial-epoxy-flooring": {
@@ -562,7 +562,7 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
       ],
       faq: {
         q: "Do you install cleanroom-compatible floors for Morris County lab and pharma space?",
-        a: "Yes. That's a self-levelling epoxy or urethane system with integral coved base, no seams or joints where particulates can collect, and a finish specified for the cleaning chemistry and the classification you're validating to. Documentation matters as much as the floor — we provide product submittals, batch records and installation documentation for your validation package, which is usually the part that trips up a general flooring contractor.",
+        a: "Yes. That's a self-leveling epoxy or urethane system with integral coved base, no seams or joints where particulates can collect, and a finish specified for the cleaning chemistry and the classification you're validating to. Documentation matters as much as the floor — we provide product submittals, batch records and installation documentation for your validation package, which is usually the part that trips up a general flooring contractor.",
       },
     },
     "basement-epoxy-flooring": {
@@ -611,6 +611,124 @@ export const countyServiceAngles: Record<string, Record<string, CountyServiceAng
       faq: {
         q: "Our club kitchen is closed for the season — how much can you get done in that window?",
         a: "A seasonal shutdown is the best scheduling scenario there is, and it lets us do things we'd otherwise have to compromise on: full tile and mortar demolition down to sound concrete, proper slab repair, full cove base detail, and unhurried cure times between coats. Most banquet kitchens are comfortably done inside a week with that access. Book it early — off-season windows fill from the previous autumn.",
+      },
+    },
+  },
+
+  /* ══════════════════════════════════════════════════════════════════
+     UNION COUNTY — refinery belt, river flooding, old slabs, west-side estates.
+     ══════════════════════════════════════════════════════════════════ */
+  "union-county": {
+    "garage-epoxy-flooring": {
+      lede: "Union County garage slabs are mostly postwar, mostly identical, and mostly failing in exactly the same place.",
+      body: [
+        "Drive through Union, Roselle, Kenilworth or Clark and you are looking at thousands of garages poured within about fifteen years of each other. That uniformity is useful: we know before we arrive what the slab is likely to be, roughly how thick, and where the damage will be. It is almost always the last three feet at the door opening, where seventy winters of road salt have been dragged in and left to freeze.",
+        "That band of pitted, flaking concrete is not a reason to replace the slab. We grind out the damaged surface layer, rebuild it with epoxy mortar, and the repair vanishes under a full-broadcast flake system. West of the Parkway — Westfield, Summit, Scotch Plains — the garages are older and more varied, so those get more crack routing and leveling before the finish work starts.",
+      ],
+      local: [
+        "Postwar two-car garages across Union, Roselle, Kenilworth and Clark",
+        "Salt-spalled door openings ground out and rebuilt before coating",
+        "Older detached and carriage garages in Westfield, Summit and Cranford",
+      ],
+      faq: {
+        q: "Why does the concrete by my Union County garage door look worse than the rest?",
+        a: "Because that's where the salt lands. Snow melt and brine drip off the tires in the first few feet inside the door, soak into the concrete, then refreeze and pop the surface apart — it's called salt spalling and it's the single most common thing we repair in this county. It's usually shallow. We grind the damaged layer out, patch with epoxy mortar, and it disappears under flake.",
+      },
+    },
+    "polyaspartic-floor-coating": {
+      lede: "Union County is a short run down the Parkway, which is what makes a true single-day install realistic here.",
+      body: [
+        "A one-day floor only holds together if the crew arrives with everything and never goes back to the shop. Union County is twenty minutes from Newark down the Parkway or Route 22, so if a slab turns out to need more repair than the walkthrough showed, we can restock mid-morning and still hand the garage back that evening. Distance is the quiet reason so many one-day promises slip to two.",
+        "The other draw here is the weather window. A large share of Union County garages are unheated and detached, and epoxy stops curing properly below about 55°F. Polyaspartic keeps curing down near 0°F, which turns November through March from a dead zone into working months — and those are exactly the months homeowners here want the garage dealt with.",
+      ],
+      local: [
+        "Winter installs on unheated garages across Union, Cranford and Roselle",
+        "Same-day turnarounds for Elizabeth and Linden service bays",
+        "Walkable the same evening, drivable in roughly 24 hours",
+      ],
+      faq: {
+        q: "Is a one-day floor in Union County actually done in one day, or is that marketing?",
+        a: "On a sound slab it's genuinely one day — the chemistry cures in one to two hours per coat instead of twelve to twenty-four, so grinding, base, flake and topcoat all fit inside a working day. What breaks the schedule is repair: significant crack routing or spall patching adds time no product removes. We walk the floor before quoting precisely so we can commit to one day or tell you honestly it's two.",
+      },
+    },
+    "commercial-epoxy-flooring": {
+      lede: "From Elizabeth storefronts to the Route 22 corridor, Union County commercial floors get retrofitted more often than they get built new.",
+      body: [
+        "Very little of the commercial space here is a fresh build-out. Retail along Route 22 and Springfield Avenue, the storefronts of Elmora and Peterstown, and the medical and office suites through Westfield and Summit have all had several tenants, and each one left something on the floor. Old VCT and its adhesive, tile mortar, sheet vinyl, a previous coating — it all has to come off mechanically before anything new goes on.",
+        "That removal is the majority of the labor and the majority of the honest quote. Once the slab is back to clean concrete, a seamless high-build epoxy in a brand-matched color ends the strip-and-wax cycle permanently. We schedule around trading hours across the county — weekends for retail, overnight for anything open seven days, phased sections for larger floors.",
+      ],
+      local: [
+        "Retail and showroom floors along the Route 22 and Route 1&9 corridors",
+        "Storefronts and restaurants through Elmora, Peterstown and downtown Elizabeth",
+        "Medical, dental and professional suites in Westfield, Summit and Cranford",
+      ],
+      faq: {
+        q: "There's old tile and glue on our Union County shop floor — is that included in the quote?",
+        a: "It should be, and in ours it is — as a visible line item rather than buried. Removing old VCT, adhesive, tile mortar or a failing coating down to sound concrete is usually the largest single piece of labor on a retrofit here. If a competing quote is dramatically cheaper, this is almost always the line that's missing from it, and it will come back as a change order.",
+      },
+    },
+    "industrial-epoxy-flooring": {
+      lede: "The Bayway belt and the Route 1&9 corridor run chemical-exposure floors that a standard warehouse system won't survive.",
+      body: [
+        "Union County's industrial base is heavier than most of North Jersey's. Around Bayway, Linden and the Route 1&9 corridor you have refining, chemical handling, fuel distribution and port-adjacent logistics, and those floors face exposures a general warehouse never sees — solvents, fuels, acids, and washdown that is neither gentle nor occasional. Specifying a standard high-build epoxy into that environment is how floors fail in eighteen months.",
+        "We spec from the actual chemistry and the actual traffic. Chemical-resistant novolac epoxies where the exposure is aggressive, urethane mortar where there's thermal shock or hot washdown, ESD systems where static matters. Joint repair with semi-rigid filler comes first regardless, because in a facility running hard-wheeled traffic the joints fail long before the field of the slab does.",
+      ],
+      local: [
+        "Chemical, fuel and refining-adjacent floors around Bayway and Linden",
+        "Distribution and 3PL warehouse space along Route 1&9 and the Turnpike",
+        "Machine shops and fabrication floors in Elizabeth, Rahway and Plainfield",
+      ],
+      faq: {
+        q: "Our Elizabeth plant handles solvents — will a normal epoxy floor hold up?",
+        a: "Often not. Standard epoxy handles oils, water and mild chemicals well, but aggressive solvents and acids will soften and lift it. That exposure calls for a novolac epoxy or a urethane mortar rated for your specific chemistry. Bring us the list of what actually contacts the floor and at what concentration and temperature, and we'll spec to it — this is exactly the situation where a generic quote costs you the floor twice.",
+      },
+    },
+    "basement-epoxy-flooring": {
+      lede: "Along the Rahway River, the basement floor question isn't how it looks — it's what happens after the next storm.",
+      body: [
+        "Cranford, Springfield, Kenilworth and the low ground through Union have a long, specific memory of the Rahway. Homeowners on those blocks are not choosing a basement floor on appearance; they are choosing one that can be recovered rather than replaced. That single requirement rules out carpet, laminate and glued vinyl, all of which come out in a dumpster once they've been wet.",
+        "A seamless epoxy floor over a properly primed slab comes back with a wet-vac and a mop. It doesn't absorb, doesn't support mold, and isn't damaged by water sitting on top of it. We still test for vapor drive from below before quoting, because that's a different problem from surface flooding and it's handled with a mitigating primer. What we won't do is coat over active intrusion and call it solved.",
+      ],
+      local: [
+        "Flood-aware homes along the Rahway River in Cranford and Springfield",
+        "Full-footprint finished basements in Westfield, Summit and Scotch Plains",
+        "Older stone and block foundations across Elizabeth and Roselle",
+      ],
+      faq: {
+        q: "If the Rahway comes up again, does the epoxy floor in our Cranford basement survive?",
+        a: "The floor itself, yes — that's exactly why it's the standard choice on those blocks. Epoxy isn't damaged by standing water, doesn't absorb it, and cleans up with a wet-vac and a mop. Be clear on what it is though: it's the flooring decision that survives a flood, not a flood-proofing measure. It won't protect anything else down there and it won't keep water out.",
+      },
+    },
+    "metallic-epoxy-flooring": {
+      lede: "Metallic work in Union County concentrates on the western side, where basements are being finished as real rooms.",
+      body: [
+        "Westfield, Summit, Scotch Plains and Berkeley Heights are where the metallic requests come from, and almost always for below-grade living space rather than garages. A finished basement in one of these houses is a gym, a media room or a guest suite, and metallic in a satin or matte topcoat reads as honed stone rather than a coated slab — which is what people actually want in a room they're furnishing.",
+        "It's also the right technical answer below grade, where hardwood and laminate are fighting vapor drive from day one. The system is a full epoxy build with the decorative coat on top, so the moisture management is identical to any other basement floor we do here. We bring samples and lay them on your own slab, because metallic reads completely differently under warm and cool light.",
+      ],
+      local: [
+        "Finished basement gyms, bars and media rooms in Westfield and Summit",
+        "Showpiece garage bays across Scotch Plains and Berkeley Heights",
+        "Salon, studio and restaurant floors around downtown Westfield and Cranford",
+      ],
+      faq: {
+        q: "Will a metallic floor look out of place in a Westfield basement?",
+        a: "Not in satin or matte. The wet-look gloss people associate with metallic comes from the topcoat, not the metallic itself — take the sheen down and the same pour reads like honed stone or poured concrete with movement in it. We bring gloss, satin and matte samples to the quote and lay them on your slab under your own basement lighting, which changes the answer more than most people expect.",
+      },
+    },
+    "restaurant-kitchen-epoxy-flooring": {
+      lede: "Elizabeth's restaurant density and the county's institutional kitchens both need the same seamless, cove-based floor.",
+      body: [
+        "Union County kitchen work splits between independent restaurants — heavily concentrated through Elizabeth's Elmora and Peterstown blocks and along Route 22 — and institutional kitchens in the county's schools, hospitals and care facilities. The independents are retrofits over failing quarry tile, where cracked grout has been trapping grease for years and the inspector has finally written it up.",
+        "The fix is the same in both: seamless urethane mortar or epoxy with integral cove base, so there is no grout line and no wall-to-floor seam for grease to collect in. We spec from your washdown temperature — a kitchen going hot and caustic nightly needs mortar, not a thin epoxy build that will thermally shock off the slab. Restaurants get worked between services; institutional kitchens get done in a scheduled break.",
+      ],
+      local: [
+        "Independent restaurant kitchens through Elmora, Peterstown and Route 22",
+        "School, hospital and care-facility kitchens across the county",
+        "Bakeries, delis and commissary space in Union, Linden and Rahway",
+      ],
+      faq: {
+        q: "Can you do a school or institutional kitchen in Union County over a scheduled break?",
+        a: "That's the ideal window and it lets us do the job properly rather than in compressed overnight stages — full tile and mortar demolition down to sound concrete, real slab repair, complete cove base detail, and unhurried cure between coats. Most institutional kitchens are comfortably finished inside a week with that access. Book it early; summer and winter break slots fill months ahead.",
       },
     },
   },

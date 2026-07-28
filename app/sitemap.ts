@@ -5,12 +5,13 @@ import { townSlugs, comboServiceSlugs } from "@/data/towns";
 import { countySlugs } from "@/data/counties";
 import { countyComboServiceSlugs, countyServiceAngle } from "@/data/countyServices";
 import { costSlugs } from "@/data/costs";
+import { finishSlugs } from "@/data/finishes";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const u = (p: string) => `${site.url}${p}`;
   const now = new Date();
 
-  const statics = ["", "/services", "/areas", "/cost", "/reviews", "/about", "/gallery", "/contact", "/quote"];
+  const statics = ["", "/services", "/areas", "/cost", "/finishes", "/why-epoxy-floors-fail", "/reviews", "/about", "/gallery", "/contact", "/quote"];
 
   const entries: MetadataRoute.Sitemap = [
     ...statics.map((p) => ({ url: u(p || "/"), lastModified: now, changeFrequency: "weekly" as const, priority: p === "" ? 1 : 0.8 })),
@@ -26,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       comboServiceSlugs.map((s) => ({ url: u(`/areas/${t}/${s}`), lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 }))
     ),
     ...costSlugs.map((c) => ({ url: u(`/cost/${c}`), lastModified: now, changeFrequency: "monthly" as const, priority: 0.75 })),
+    ...finishSlugs.map((f) => ({ url: u(`/finishes/${f}`), lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 })),
   ];
 
   return entries;

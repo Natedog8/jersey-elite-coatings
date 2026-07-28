@@ -32,7 +32,11 @@ const nextConfig = {
       { source: "/passaic-county-epoxy", destination: "/areas/passaic-county", permanent: true },
       { source: "/hudson-county-epoxy", destination: "/areas/hudson-county", permanent: true },
       { source: "/morris-county-epoxy", destination: "/areas/morris-county", permanent: true },
-      { source: "/union-county-epoxy", destination: "/areas", permanent: true },
+      { source: "/union-county-epoxy", destination: "/areas/union-county", permanent: true },
+      { source: "/union-county", destination: "/areas/union-county", permanent: true },
+      { source: "/elizabeth-epoxy-flooring", destination: "/areas/elizabeth", permanent: true },
+      { source: "/westfield-epoxy-flooring", destination: "/areas/westfield", permanent: true },
+      { source: "/summit-epoxy-flooring", destination: "/areas/summit", permanent: true },
       // Polyaspartic / 1-day terms — high-volume searches the old site never had a page for
       { source: "/polyaspartic-flooring", destination: "/services/polyaspartic-floor-coating", permanent: true },
       { source: "/polyaspartic-coating", destination: "/services/polyaspartic-floor-coating", permanent: true },

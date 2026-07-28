@@ -13,7 +13,7 @@ export function Footer() {
         <div>
           <Logo light className="h-14" />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-navy-200">
-            North Jersey's premier epoxy flooring &amp; concrete coating specialists.
+            North Jersey's premier epoxy flooring &amp; concrete coating specializts.
             Locally owned, licensed &amp; insured, and obsessed with floors since 2010.
           </p>
           <div className="mt-5 flex flex-wrap gap-3 text-sm">
@@ -57,7 +57,9 @@ export function Footer() {
 
         <FooterCol title="Company">
           <FooterLink href="/about">About Us</FooterLink>
+          <FooterLink href="/finishes">Floor Finishes</FooterLink>
           <FooterLink href="/gallery">Project Gallery</FooterLink>
+          <FooterLink href="/why-epoxy-floors-fail">Why Epoxy Floors Fail</FooterLink>
           <FooterLink href="/reviews">Reviews</FooterLink>
           <FooterLink href="/cost">Pricing &amp; Cost Guides</FooterLink>
           <FooterLink href="/contact">Contact</FooterLink>

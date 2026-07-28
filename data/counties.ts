@@ -141,6 +141,30 @@ export const counties: County[] = [
       },
     ],
   },
+  {
+    slug: "union-county",
+    name: "Union County",
+    shortName: "Union",
+    seat: "Elizabeth",
+    intro:
+      "Union County packs an unusual amount of range into a small footprint. Elizabeth alone runs from the Bayway refinery belt to port terminal space to blocks of working storefronts, while fifteen minutes west you're in Westfield and Summit coating three-car garages and full-footprint basements. It's the county where our industrial trailer and our residential trailer are most likely to be out on the same morning.",
+    detail:
+      "Two things shape the work here. The first is water: the Rahway River runs straight through Cranford and Springfield, and enough of this county has a flood story that basement floors get chosen on whether they survive one, not on how they look. The second is age — Union County's housing and industrial stock is largely pre-1960, so slabs need genuine crack routing, spall repair and moisture testing before any coating is worth putting down.",
+    faq: [
+      {
+        q: "Do you cover all of Union County, or only the towns with pages?",
+        a: "All of it. Elizabeth, Union, Westfield, Summit and Cranford have their own pages because they're where we work most, but we cover Linden, Rahway, Plainfield, Scotch Plains, Springfield, Berkeley Heights, Clark, Kenilworth, Roselle and everywhere between. Union County is a straight run down the Parkway or Route 22 from our Newark shop — no travel charge.",
+      },
+      {
+        q: "Our Cranford basement has flooded before — is epoxy the right floor?",
+        a: "It's the flooring choice that survives it, which is exactly why we install so much of it along the Rahway. Epoxy doesn't absorb, doesn't support mold, and cleans up after water with a wet-vac and a mop instead of a dumpster. What it can't do is stop water getting in — that's a drainage job, and we'll tell you straight if that's what you actually need first.",
+      },
+      {
+        q: "Can you handle industrial floors around Elizabeth and the Bayway corridor?",
+        a: "Yes — that corridor is some of the hardest-working concrete in the state, and it's the same work we do at Port Newark ten minutes north. Chemical-resistant high-build epoxy and urethane mortar systems, joint repair with semi-rigid filler, safety striping, and phased installs scheduled around your shifts so production and receiving never stop.",
+      },
+    ],
+  },
 ];
 
 export const countySlugs = counties.map((c) => c.slug);

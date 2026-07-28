@@ -180,6 +180,71 @@ export const towns: Town[] = [
     profile: "estate",
     hook: "the restaurant kitchens around the Green and the estate garages of Normandy Park",
   },
+  {
+    slug: "elizabeth",
+    name: "Elizabeth",
+    zip: "07201",
+    county: "Union County",
+    population: "~137,000",
+    neighborhoods: ["Elmora", "Peterstown", "Bayway", "Midtown", "North Elizabeth"],
+    localColor:
+      "Elizabeth works for a living — the Bayway refinery belt, the port terminals, and blocks of two-families and shops in Elmora and Peterstown. The floors here take industrial punishment and get coated around shift schedules.",
+    nearby: ["Newark", "Linden", "Union"],
+    profile: "urban",
+    hook: "the Bayway industrial belt and the working storefronts of Elmora and Peterstown",
+  },
+  {
+    slug: "union",
+    name: "Union",
+    zip: "07083",
+    county: "Union County",
+    population: "~60,000",
+    neighborhoods: ["Vauxhall", "Battle Hill", "Putnam Manor", "Larchmont"],
+    localColor:
+      "Union is postwar cape-and-split-level country, which means thousands of two-car garages of almost identical vintage — and almost identical salt damage along the door opening.",
+    nearby: ["Springfield", "Elizabeth", "Kenilworth"],
+    profile: "suburban",
+    hook: "the postwar garages off Morris Avenue and the Vauxhall and Battle Hill streets behind it",
+  },
+  {
+    slug: "westfield",
+    name: "Westfield",
+    zip: "07090",
+    county: "Union County",
+    population: "~30,000",
+    neighborhoods: ["Stoneleigh Park", "The Gardens", "Wychwood", "Brightwood"],
+    localColor:
+      "Westfield's center-hall colonials come with detached garages that are often older than the driveway — and basements that homeowners are now finishing to the same standard as the rest of the house.",
+    nearby: ["Cranford", "Scotch Plains", "Garwood"],
+    profile: "estate",
+    hook: "the center-hall colonials around Stoneleigh Park and the Gardens",
+  },
+  {
+    slug: "summit",
+    name: "Summit",
+    zip: "07901",
+    county: "Union County",
+    population: "~22,000",
+    neighborhoods: ["Northside", "Franklin Hill", "Brayton", "Beekman"],
+    localColor:
+      "Summit sits high and dry compared to most of Union County, but the housing stock is old — carriage-era garages and stone-foundation basements that need real prep before they take a coating.",
+    nearby: ["New Providence", "Chatham", "Berkeley Heights"],
+    profile: "estate",
+    hook: "the hilltop homes off Springfield Avenue and the Northside's carriage-era garages",
+  },
+  {
+    slug: "cranford",
+    name: "Cranford",
+    zip: "07016",
+    county: "Union County",
+    population: "~24,000",
+    neighborhoods: ["Riverside", "Brookside Place", "Lincoln Park", "Osceola"],
+    localColor:
+      "In Cranford the Rahway River is the whole conversation. Half the town has a basement flood story, and it drives every flooring decision made below grade here.",
+    nearby: ["Westfield", "Garwood", "Kenilworth"],
+    profile: "suburban",
+    hook: "the Rahway River blocks around Riverside and Brookside Place",
+  },
 ];
 
 export function getTown(slug: string) {

@@ -3,7 +3,7 @@
 > Premier epoxy flooring and concrete coating company serving all of North Jersey. Licensed & insured, locally owned, installing since 2010. Services include garage epoxy flooring, polyaspartic 1-day coatings, metallic & decorative epoxy, full-broadcast flake systems, commercial epoxy, industrial floor coatings, basement epoxy, and restaurant kitchen flooring. Every floor is backed by a lifetime warranty against peeling and delamination.
 
 ## Key facts
-- Service area: All of North Jersey — Essex, Hudson, Bergen, Passaic & Morris counties. Town coverage includes Newark, Jersey City, Hoboken, Clifton, Paterson, Montclair, Wayne, West Orange, Livingston, Ridgewood, Paramus and Morristown.
+- Service area: All of North Jersey — Essex, Hudson, Bergen, Passaic, Morris & Union counties. Town coverage includes Newark, Jersey City, Hoboken, Clifton, Paterson, Montclair, Wayne, West Orange, Livingston, Ridgewood, Paramus, Morristown, Elizabeth, Union, Westfield, Summit and Cranford.
 - Method: Diamond grinding surface preparation on every floor — never acid etching. 100% solids epoxy and aliphatic polyaspartic systems. Calcium chloride or RH moisture testing before basement and slab-on-grade installs.
 - Credentials: Licensed & insured in New Jersey. Certificate of insurance on request. Free on-site quotes with physical color & flake samples. Lifetime warranty against peeling and delamination.
 - Pricing: Residential epoxy typically $3–8 per sq ft installed; a 2-car garage (≈400 sq ft) runs $1,200–$3,200. Metallic systems $7–12 per sq ft. Commercial $4–10 per sq ft; urethane mortar $8–15 per sq ft.
@@ -21,6 +21,23 @@
 - Basement Epoxy Flooring: /services/basement-epoxy-flooring
 - Restaurant Kitchen Epoxy: /services/restaurant-kitchen-epoxy-flooring
 
+## Floor finishes
+Each finish page shows the system layer by layer, the installed price range, and where it suits.
+- All finishes: /finishes
+- Gray full-flake garage floor: /finishes/gray-full-flake-garage
+- Blue & black flake with coved base: /finishes/blue-black-flake-with-coved-base
+- Red flake shop bay: /finishes/red-flake-shop-bay
+- Blue-gray marbled garage floor: /finishes/blue-gray-marbled-garage
+- Copper metallic interior floor: /finishes/copper-metallic-interior
+- Two-tone showroom floor: /finishes/two-tone-showroom
+- High-gloss white commercial floor: /finishes/high-gloss-white-commercial
+- Light gray warehouse floor: /finishes/gray-warehouse-floor
+- Color-coded traffic aisle: /finishes/green-traffic-aisle
+- Solid gray garage floor: /finishes/solid-gray-garage
+
+## Diagnosing a failed floor
+- Why epoxy floors fail (peeling, blistering, hot-tire pickup, yellowing, chipping, under-cure): /why-epoxy-floors-fail
+
 ## Service areas by county
 Each county hub links down to its towns; each county × service page covers what that specific work involves in that specific county.
 - Essex County (headquarters — Newark): /areas/essex-county
@@ -28,6 +45,7 @@ Each county hub links down to its towns; each county × service page covers what
 - Passaic County: /areas/passaic-county
 - Bergen County: /areas/bergen-county
 - Morris County: /areas/morris-county
+- Union County: /areas/union-county
 
 ## Pricing guides
 - Epoxy flooring cost in NJ: /cost/epoxy-flooring-cost-nj
