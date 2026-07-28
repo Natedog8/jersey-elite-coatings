@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ town: str
   const c = countyBySlug(town);
   if (c) {
     return {
-      title: `Epoxy Flooring in ${c.name}, NJ | Garage, Commercial & Metallic`,
+      title: `Epoxy Flooring in ${c.name}, NJ`,
       description: `Professional epoxy flooring across ${c.name}, NJ. Garage, commercial, basement & metallic systems with a lifetime warranty. Licensed, insured, free on-site quotes — call ${site.phoneDisplay}.`,
       alternates: { canonical: `/areas/${c.slug}` },
       openGraph: {
@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ town: str
   const t = townBySlug(town);
   if (!t) return {};
   return {
-    title: `Epoxy Flooring in ${t.name}, NJ | Garage, Commercial & Basement`,
+    title: `Epoxy Flooring in ${t.name}, NJ`,
     description: `Professional epoxy flooring in ${t.name}, NJ. Garage, commercial, basement & metallic epoxy with a lifetime warranty. Licensed, insured, free quotes. Serving ${t.neighborhoods.slice(0, 3).join(", ")} & all of ${t.name}.`,
     alternates: { canonical: `/areas/${t.slug}` },
     openGraph: {

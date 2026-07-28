@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { type County, townsInCounty } from "@/data/counties";
+import { countyServiceAngle } from "@/data/countyServices";
 import { services } from "@/data/services";
 import { site } from "@/site.config";
 import { Icon } from "@/lib/icons";
@@ -33,6 +34,8 @@ export function CountyView({ county: c }: { county: County }) {
             name: `Epoxy Flooring in ${c.name}, NJ`,
             description: c.intro,
             url: `${site.url}/areas/${c.slug}`,
+            areaName: c.name,
+            areaType: "AdministrativeArea",
           }),
           faqSchema(c.faq),
           breadcrumbSchema(crumbs),
@@ -155,12 +158,18 @@ export function CountyView({ county: c }: { county: County }) {
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s) => {
             const I = Icon[s.icon as keyof typeof Icon] ?? Icon.spray;
+            /* prefer the county×service page where we've written real copy for it */
+            const hasCombo = Boolean(countyServiceAngle(c.slug, s.slug));
+            const href = hasCombo ? `/areas/${c.slug}/${s.slug}` : `/services/${s.slug}`;
             return (
-              <Link key={s.slug} href={`/services/${s.slug}`} className="card card-hover flex flex-col gap-2 p-5">
+              <Link key={s.slug} href={href} className="card card-hover flex flex-col gap-2 p-5">
                 <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-aqua-100 text-aqua-700">
                   <I className="h-5 w-5" />
                 </span>
-                <span className="font-bold text-navy-800">{s.shortName}</span>
+                <span className="font-bold text-navy-800">
+                  {s.shortName}
+                  {hasCombo && ` in ${c.shortName} County`}
+                </span>
                 <span className="text-sm text-muted">{s.tagline}</span>
               </Link>
             );

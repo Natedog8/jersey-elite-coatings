@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { services, serviceBySlug, serviceSlugs } from "@/data/services";
+import { services, serviceBySlug, serviceSlugs, installProcess } from "@/data/services";
 import { towns } from "@/data/towns";
+import { counties } from "@/data/counties";
+import { countyServiceAngle } from "@/data/countyServices";
 import { site } from "@/site.config";
 import { Icon } from "@/lib/icons";
 import { Container, Section, Button, CheckList, Eyebrow } from "@/components/ui";
@@ -12,7 +14,7 @@ import { QuoteForm } from "@/components/QuoteForm";
 import { FAQ } from "@/components/FAQ";
 import { ReviewsWall, CTABand, ProjectShowcase } from "@/components/sections";
 import { JsonLd } from "@/components/JsonLd";
-import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo";
+import { serviceSchema, faqSchema, breadcrumbSchema, howToSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
   return serviceSlugs.map((slug) => ({ slug }));
@@ -43,7 +45,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const s = serviceBySlug(slug);
   if (!s) return {};
   return {
-    title: `${s.name} in North Jersey | From $${s.priceFrom}/sq ft`,
+    title: `${s.name} in North Jersey`,
     description: `${s.intro.slice(0, 155)}`,
     alternates: { canonical: `/services/${s.slug}` },
     openGraph: { title: `${s.name} — ${site.name}`, description: s.tagline, images: [{ url: s.photo }] },
@@ -56,6 +58,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   if (!s) notFound();
 
   const others = services.filter((x) => x.slug !== s.slug).slice(0, 4);
+  /* only link counties we've actually written copy for at this service */
+  const countyLinks = counties.filter((c) => countyServiceAngle(c.slug, s.slug));
   const crumbs = [
     { name: "Home", url: "/" },
     { name: "Services", url: "/services" },
@@ -66,8 +70,19 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     <>
       <JsonLd
         data={[
-          serviceSchema({ name: s.name, description: s.intro, url: `${site.url}/services/${s.slug}` }),
+          serviceSchema({
+            name: s.name,
+            description: s.intro,
+            url: `${site.url}/services/${s.slug}`,
+            image: s.photo,
+            priceFrom: s.priceFrom,
+          }),
           faqSchema(s.faq),
+          howToSchema({
+            name: `How ${site.name} installs ${s.name.toLowerCase()}`,
+            description: `Our four-step installation process for ${s.name.toLowerCase()} across North Jersey — assessment, diamond grinding, repair and priming, then the build and topcoat.`,
+            steps: installProcess,
+          }),
           breadcrumbSchema(crumbs),
         ]}
       />
@@ -187,13 +202,34 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </Section>
       )}
 
-      {/* town links — internal linking for geo SEO */}
+      {/* county + town links — internal linking for geo SEO */}
       <Section>
         <h2 className="text-2xl font-extrabold text-navy-900">
           {s.shortName} across North Jersey
         </h2>
         <p className="mt-2 text-muted">We install {s.shortName.toLowerCase()} in every corner of North Jersey:</p>
-        <div className="mt-6 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+
+        {countyLinks.length > 0 && (
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {countyLinks.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/areas/${c.slug}/${s.slug}`}
+                className="card card-hover flex items-center gap-3 p-4"
+              >
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-aqua-100 text-aqua-700">
+                  <Icon.pin className="h-5 w-5" />
+                </span>
+                <span className="font-bold text-navy-800">
+                  {s.shortName} in {c.name}
+                </span>
+              </Link>
+            ))}
+          </div>
+        )}
+
+        <h3 className="mt-8 text-lg font-extrabold text-navy-900">Town by town</h3>
+        <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
           {towns.map((t) => (
             <Link
               key={t.slug}

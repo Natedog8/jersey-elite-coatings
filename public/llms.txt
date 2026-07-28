@@ -1,16 +1,19 @@
 # Jersey Elite Coatings
 
-> Premier epoxy flooring and concrete coating company serving all of North Jersey. Licensed & insured, locally owned, installing since 2010. Services include garage epoxy flooring, metallic & decorative epoxy, full-broadcast flake systems, commercial epoxy, industrial floor coatings, basement epoxy, and restaurant kitchen flooring. Every floor is backed by a lifetime warranty against peeling and delamination.
+> Premier epoxy flooring and concrete coating company serving all of North Jersey. Licensed & insured, locally owned, installing since 2010. Services include garage epoxy flooring, polyaspartic 1-day coatings, metallic & decorative epoxy, full-broadcast flake systems, commercial epoxy, industrial floor coatings, basement epoxy, and restaurant kitchen flooring. Every floor is backed by a lifetime warranty against peeling and delamination.
 
 ## Key facts
-- Service area: All of North Jersey — Newark, Jersey City, Hoboken, Clifton, Paterson, Montclair, Wayne, West Orange, Livingston, Ridgewood, Paramus, Morristown, and surrounding Essex, Hudson, Bergen, Passaic & Morris County towns.
-- Method: Diamond grinding surface preparation on every floor, 100% solids epoxy and polyaspartic systems, moisture testing before basement installs.
-- Credentials: Licensed & insured in New Jersey. Free on-site quotes with color & flake samples. Lifetime warranty against peeling and delamination.
-- Pricing: Residential epoxy typically $3–8 per sq ft installed; a 2-car garage (≈400 sq ft) runs $1,200–$3,200. Metallic systems $7–12 per sq ft.
+- Service area: All of North Jersey — Essex, Hudson, Bergen, Passaic & Morris counties. Town coverage includes Newark, Jersey City, Hoboken, Clifton, Paterson, Montclair, Wayne, West Orange, Livingston, Ridgewood, Paramus and Morristown.
+- Method: Diamond grinding surface preparation on every floor — never acid etching. 100% solids epoxy and aliphatic polyaspartic systems. Calcium chloride or RH moisture testing before basement and slab-on-grade installs.
+- Credentials: Licensed & insured in New Jersey. Certificate of insurance on request. Free on-site quotes with physical color & flake samples. Lifetime warranty against peeling and delamination.
+- Pricing: Residential epoxy typically $3–8 per sq ft installed; a 2-car garage (≈400 sq ft) runs $1,200–$3,200. Metallic systems $7–12 per sq ft. Commercial $4–10 per sq ft; urethane mortar $8–15 per sq ft.
+- Timeline: Standard epoxy garage 2–3 days (walk in 24 hrs, park in 72). Polyaspartic 1-day system: walkable the same evening, drivable in ≈24 hours.
+- Winter: Polyaspartic keeps curing down to ≈0°F, so unheated North Jersey garages can be coated November–March; standard epoxy needs a slab above ≈55°F.
 - Phone: (973) 378-1192 · Email: info@jerseyelitecoatings.com
 
 ## Services
 - Garage Epoxy Flooring: /services/garage-epoxy-flooring
+- Polyaspartic 1-Day Floor Coatings: /services/polyaspartic-floor-coating
 - Metallic & Decorative Epoxy: /services/metallic-epoxy-flooring
 - Flake Epoxy Systems: /services/flake-epoxy-flooring
 - Commercial Epoxy Flooring: /services/commercial-epoxy-flooring
@@ -18,10 +21,27 @@
 - Basement Epoxy Flooring: /services/basement-epoxy-flooring
 - Restaurant Kitchen Epoxy: /services/restaurant-kitchen-epoxy-flooring
 
-## Cost guides
+## Service areas by county
+Each county hub links down to its towns; each county × service page covers what that specific work involves in that specific county.
+- Essex County (headquarters — Newark): /areas/essex-county
+- Hudson County: /areas/hudson-county
+- Passaic County: /areas/passaic-county
+- Bergen County: /areas/bergen-county
+- Morris County: /areas/morris-county
+
+## Pricing guides
 - Epoxy flooring cost in NJ: /cost/epoxy-flooring-cost-nj
 - Garage floor epoxy cost: /cost/garage-floor-epoxy-cost
+- Commercial epoxy flooring cost in NJ: /cost/commercial-epoxy-flooring-cost-nj
+
+## Buyer's guides
 - Epoxy vs polyaspartic: /cost/epoxy-vs-polyaspartic
+- Can you install epoxy flooring in winter in NJ: /cost/epoxy-flooring-in-winter-nj
+- Epoxy vs tile vs garage floor mats: /cost/epoxy-vs-tile-vs-mats
+- Can you epoxy over a painted garage floor: /cost/epoxy-over-painted-garage-floor
+- Can you epoxy over cracked concrete: /cost/epoxy-over-cracked-concrete
 - How long does epoxy flooring last: /cost/how-long-does-epoxy-flooring-last
+- How long does epoxy installation take: /cost/how-long-does-epoxy-installation-take
+- How to clean and maintain an epoxy floor: /cost/how-to-maintain-an-epoxy-floor
+- DIY epoxy kit vs professional installation: /cost/diy-epoxy-kit-vs-professional
 - Is epoxy flooring worth it: /cost/is-epoxy-flooring-worth-it
-- Epoxy over cracked concrete: /cost/epoxy-over-cracked-concrete

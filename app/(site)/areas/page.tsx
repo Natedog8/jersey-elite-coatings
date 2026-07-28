@@ -8,7 +8,7 @@ import { Icon } from "@/lib/icons";
 import { site } from "@/site.config";
 
 export const metadata: Metadata = {
-  title: "Epoxy Flooring Service Areas Across North Jersey",
+  title: "Epoxy Flooring Service Areas — North Jersey",
   description:
     "Jersey Elite Coatings serves all of North Jersey — Newark, Jersey City, Hoboken, Clifton, Paterson, Montclair, Wayne, Livingston, Ridgewood, Paramus, Morristown & more.",
   alternates: { canonical: "/areas" },

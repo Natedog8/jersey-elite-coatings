@@ -56,22 +56,25 @@ export function ServiceGrid({ heading = true }: { heading?: boolean }) {
         {services.map((s) => (
           <ServiceCard key={s.slug} s={s} />
         ))}
-        {/* filler card keeps the 7-service grid balanced at 4-wide */}
-        <Link
-          href="/quote"
-          className="card card-hover group flex flex-col items-center justify-center gap-3 overflow-hidden p-6 text-center"
-        >
-          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-aqua-400 to-aqua-600 text-white shadow-[var(--shadow-glow)]">
-            <Icon.bolt className="h-6 w-6" />
-          </span>
-          <span className="text-lg font-extrabold text-navy-800">Not sure what you need?</span>
-          <span className="text-sm leading-relaxed text-muted">
-            Tell us about your floor — we'll recommend the right system and price it free.
-          </span>
-          <span className="flex items-center gap-1 text-sm font-bold text-aqua-700 transition group-hover:gap-2">
-            Get a free quote <Icon.arrow className="h-4 w-4" />
-          </span>
-        </Link>
+        {/* filler card only when it keeps the grid balanced at 4-wide —
+            with a multiple of four it would orphan itself on its own row */}
+        {services.length % 4 !== 0 && (
+          <Link
+            href="/quote"
+            className="card card-hover group flex flex-col items-center justify-center gap-3 overflow-hidden p-6 text-center"
+          >
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-aqua-400 to-aqua-600 text-white shadow-[var(--shadow-glow)]">
+              <Icon.bolt className="h-6 w-6" />
+            </span>
+            <span className="text-lg font-extrabold text-navy-800">Not sure what you need?</span>
+            <span className="text-sm leading-relaxed text-muted">
+              Tell us about your floor — we'll recommend the right system and price it free.
+            </span>
+            <span className="flex items-center gap-1 text-sm font-bold text-aqua-700 transition group-hover:gap-2">
+              Get a free quote <Icon.arrow className="h-4 w-4" />
+            </span>
+          </Link>
+        )}
       </div>
     </Section>
   );

@@ -3,6 +3,11 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { townBySlug, townSlugs, comboServiceSlugs } from "@/data/towns";
+import { countyBySlug, countySlugs } from "@/data/counties";
+import { countyComboServiceSlugs, countyServiceAngle } from "@/data/countyServices";
+import { CountyServiceView } from "./CountyServiceView";
+import { comboFaqs } from "@/data/comboFaqs";
+import { townServiceAngle } from "@/data/townServiceAngles";
 import { serviceBySlug, services } from "@/data/services";
 import { site } from "@/site.config";
 import { Icon } from "@/lib/icons";
@@ -14,8 +19,18 @@ import { ReviewsWall, CTABand, ProjectShowcase } from "@/components/sections";
 import { JsonLd } from "@/components/JsonLd";
 import { serviceSchema, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
+/* This segment serves both town×service (/areas/newark/garage-epoxy-flooring)
+   and county×service (/areas/bergen-county/commercial-epoxy-flooring) — county
+   slugs never collide with town slugs. */
 export function generateStaticParams() {
-  return townSlugs.flatMap((town) => comboServiceSlugs.map((service) => ({ town, service })));
+  return [
+    ...townSlugs.flatMap((town) => comboServiceSlugs.map((service) => ({ town, service }))),
+    ...countySlugs.flatMap((town) =>
+      countyComboServiceSlugs
+        .filter((service) => Boolean(countyServiceAngle(town, service)))
+        .map((service) => ({ town, service }))
+    ),
+  ];
 }
 
 export async function generateMetadata({
@@ -24,11 +39,27 @@ export async function generateMetadata({
   params: Promise<{ town: string; service: string }>;
 }): Promise<Metadata> {
   const { town, service } = await params;
-  const t = townBySlug(town);
   const s = serviceBySlug(service);
-  if (!t || !s) return {};
+  if (!s) return {};
+
+  const c = countyBySlug(town);
+  if (c && countyServiceAngle(c.slug, s.slug)) {
+    return {
+      title: `${s.shortName} in ${c.name}, NJ`,
+      description: `Professional ${s.name.toLowerCase()} across ${c.name}, NJ. ${s.tagline}. Licensed, insured & backed by a lifetime warranty. Free on-site quotes — call ${site.phoneDisplay}.`,
+      alternates: { canonical: `/areas/${c.slug}/${s.slug}` },
+      openGraph: {
+        title: `${s.shortName} in ${c.name}, NJ — ${site.name}`,
+        description: s.tagline,
+        images: [{ url: s.photo }],
+      },
+    };
+  }
+
+  const t = townBySlug(town);
+  if (!t) return {};
   return {
-    title: `${s.shortName} in ${t.name}, NJ | ${site.shortName}`,
+    title: `${s.shortName} in ${t.name}, NJ`,
     description: `Professional ${s.name.toLowerCase()} in ${t.name}, NJ. ${s.tagline}. Licensed, insured & backed by a lifetime warranty. Free on-site quotes — call ${site.phoneDisplay}.`,
     alternates: { canonical: `/areas/${t.slug}/${s.slug}` },
     openGraph: {
@@ -45,9 +76,22 @@ export default async function ComboPage({
   params: Promise<{ town: string; service: string }>;
 }) {
   const { town, service } = await params;
-  const t = townBySlug(town);
   const s = serviceBySlug(service);
-  if (!t || !s || !comboServiceSlugs.includes(service)) notFound();
+  if (!s) notFound();
+
+  /* county × service */
+  const c = countyBySlug(town);
+  if (c) {
+    const angle = countyServiceAngle(c.slug, s.slug);
+    if (!angle) notFound();
+    return <CountyServiceView county={c} service={s} angle={angle} />;
+  }
+
+  /* town × service */
+  const t = townBySlug(town);
+  if (!t || !comboServiceSlugs.includes(service)) notFound();
+  const faqs = comboFaqs(t, s);
+  const angle = townServiceAngle(t, s.slug);
 
   const crumbs = [
     { name: "Home", url: "/" },
@@ -65,8 +109,10 @@ export default async function ComboPage({
             description: s.intro,
             url: `${site.url}/areas/${t.slug}/${s.slug}`,
             areaName: t.name,
+            image: s.photo,
+            priceFrom: s.priceFrom,
           }),
-          faqSchema(s.faq),
+          faqSchema(faqs),
           breadcrumbSchema(crumbs),
         ]}
       />
@@ -109,6 +155,25 @@ export default async function ComboPage({
               </p>
             </div>
 
+            {angle && (
+              <>
+                <h2 className="mt-10 text-2xl font-extrabold text-navy-900">{angle.heading}</h2>
+                {angle.body.map((p, i) => (
+                  <p key={i} className={`text-lg leading-relaxed text-muted ${i === 0 ? "mt-5" : "mt-4"}`}>
+                    {p}
+                  </p>
+                ))}
+                <ul className="mt-6 grid gap-2.5">
+                  {angle.local.map((l) => (
+                    <li key={l} className="flex items-start gap-2.5">
+                      <Icon.check className="mt-1 h-4 w-4 shrink-0 text-aqua-600" />
+                      <span className="text-[15px] leading-relaxed text-navy-700">{l}</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
             <h2 className="mt-10 text-2xl font-extrabold text-navy-900">
               Your {t.name} {s.shortName.toLowerCase()} includes
             </h2>
@@ -139,14 +204,14 @@ export default async function ComboPage({
         </div>
       </Section>
 
-      {s.faq.length > 0 && (
+      {faqs.length > 0 && (
         <Section className="bg-navy-50/40">
           <div className="mx-auto max-w-2xl text-center">
             <Eyebrow>{t.name} · {s.shortName}</Eyebrow>
             <h2 className="mt-3 text-3xl font-extrabold text-navy-900">Questions from {t.name} customers</h2>
           </div>
           <div className="mt-10">
-            <FAQ items={s.faq} />
+            <FAQ items={faqs} />
           </div>
         </Section>
       )}
@@ -178,6 +243,26 @@ export default async function ComboPage({
             All {t.name} services →
           </Link>
         </div>
+
+        {/* up-link into the county hub — completes the silo both ways */}
+        {countyBySlug(t.county.toLowerCase().replace(/\s+/g, "-")) && (
+          <div className="mt-6 flex flex-wrap gap-3">
+            {countyServiceAngle(t.county.toLowerCase().replace(/\s+/g, "-"), s.slug) && (
+              <Link
+                href={`/areas/${t.county.toLowerCase().replace(/\s+/g, "-")}/${s.slug}`}
+                className="btn btn-outline font-bold text-aqua-700"
+              >
+                <Icon.pin className="h-4 w-4" /> {s.shortName} across {t.county}
+              </Link>
+            )}
+            <Link
+              href={`/areas/${t.county.toLowerCase().replace(/\s+/g, "-")}`}
+              className="btn btn-outline"
+            >
+              <Icon.pin className="h-4 w-4" /> All of {t.county}
+            </Link>
+          </div>
+        )}
       </Section>
 
       <ProjectShowcase bg count={4} title={`${s.shortName} results across North Jersey`} />

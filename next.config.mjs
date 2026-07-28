@@ -33,6 +33,11 @@ const nextConfig = {
       { source: "/hudson-county-epoxy", destination: "/areas/hudson-county", permanent: true },
       { source: "/morris-county-epoxy", destination: "/areas/morris-county", permanent: true },
       { source: "/union-county-epoxy", destination: "/areas", permanent: true },
+      // Polyaspartic / 1-day terms — high-volume searches the old site never had a page for
+      { source: "/polyaspartic-flooring", destination: "/services/polyaspartic-floor-coating", permanent: true },
+      { source: "/polyaspartic-coating", destination: "/services/polyaspartic-floor-coating", permanent: true },
+      { source: "/one-day-garage-floor", destination: "/services/polyaspartic-floor-coating", permanent: true },
+      { source: "/1-day-garage-floor", destination: "/services/polyaspartic-floor-coating", permanent: true },
       { source: "/epoxy-floor-repair", destination: "/services/garage-epoxy-flooring", permanent: true },
       { source: "/garage-floor-repair", destination: "/services/garage-epoxy-flooring", permanent: true },
       { source: "/epoxy-maintenance", destination: "/cost/how-long-does-epoxy-flooring-last", permanent: true },

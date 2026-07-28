@@ -192,6 +192,7 @@ export const townSlugs = towns.map((t) => t.slug);
 /** Services that get a dedicated town×service combo page (highest-intent pairs). */
 export const comboServiceSlugs = [
   "garage-epoxy-flooring",
+  "polyaspartic-floor-coating",
   "commercial-epoxy-flooring",
   "basement-epoxy-flooring",
   "metallic-epoxy-flooring",

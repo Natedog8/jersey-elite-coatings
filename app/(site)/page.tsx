@@ -17,13 +17,25 @@ import {
   ProcessStrip,
 } from "@/components/sections";
 import { generalFaqs } from "@/data/faqs";
+import { services } from "@/data/services";
 import { JsonLd } from "@/components/JsonLd";
-import { faqSchema } from "@/lib/seo";
+import { faqSchema, offerCatalogSchema } from "@/lib/seo";
 
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={faqSchema(generalFaqs)} />
+      <JsonLd
+        data={[
+          faqSchema(generalFaqs),
+          offerCatalogSchema(
+            services.map((s) => ({
+              name: s.name,
+              description: s.tagline,
+              url: `/services/${s.slug}`,
+            }))
+          ),
+        ]}
+      />
 
       {/* ── HERO — full-bleed cover photo (real North Jersey install) ── */}
       <section className="relative overflow-hidden text-white">

@@ -5,6 +5,7 @@ import { useState } from "react";
 import { site } from "@/site.config";
 import { services } from "@/data/services";
 import { towns } from "@/data/towns";
+import { counties } from "@/data/counties";
 import { Icon } from "@/lib/icons";
 import { Logo } from "./Logo";
 
@@ -62,16 +63,36 @@ export function Header() {
           </NavDrop>
 
           <NavDrop label="Service Areas" open={menu === "areas"} onEnter={() => setMenu("areas")}>
-            <div className="grid w-[420px] grid-cols-3 gap-1 p-3">
-              {towns.map((t) => (
-                <Link
-                  key={t.slug}
-                  href={`/areas/${t.slug}`}
-                  className="rounded-lg px-3 py-2 text-sm font-medium text-navy-700 transition hover:bg-aqua-50 hover:text-aqua-700"
-                >
-                  {t.name}
-                </Link>
-              ))}
+            <div className="w-[460px] p-3">
+              <span className="px-2 text-[11px] font-bold uppercase tracking-[0.16em] text-muted">
+                By county
+              </span>
+              <div className="mt-1.5 grid grid-cols-2 gap-1">
+                {counties.map((c) => (
+                  <Link
+                    key={c.slug}
+                    href={`/areas/${c.slug}`}
+                    className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-bold text-navy-800 transition hover:bg-aqua-50 hover:text-aqua-700"
+                  >
+                    <Icon.pin className="h-4 w-4 shrink-0 text-aqua-600" />
+                    {c.name}
+                  </Link>
+                ))}
+              </div>
+              <span className="mt-3 block border-t border-navy-50 px-2 pt-3 text-[11px] font-bold uppercase tracking-[0.16em] text-muted">
+                By town
+              </span>
+              <div className="mt-1.5 grid grid-cols-3 gap-1">
+                {towns.map((t) => (
+                  <Link
+                    key={t.slug}
+                    href={`/areas/${t.slug}`}
+                    className="rounded-lg px-3 py-2 text-sm font-medium text-navy-700 transition hover:bg-aqua-50 hover:text-aqua-700"
+                  >
+                    {t.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </NavDrop>
 
@@ -105,7 +126,14 @@ export function Header() {
         <div className="border-t border-navy-50 bg-white lg:hidden">
           <div className="container-x grid gap-1 py-4">
             <MobileGroup title="Services" links={services.map((s) => ({ href: `/services/${s.slug}`, label: s.shortName }))} onNav={() => setOpen(false)} />
-            <MobileGroup title="Service Areas" links={towns.map((t) => ({ href: `/areas/${t.slug}`, label: t.name }))} onNav={() => setOpen(false)} />
+            <MobileGroup
+              title="Service Areas"
+              links={[
+                ...counties.map((c) => ({ href: `/areas/${c.slug}`, label: c.name })),
+                ...towns.map((t) => ({ href: `/areas/${t.slug}`, label: t.name })),
+              ]}
+              onNav={() => setOpen(false)}
+            />
             {[
               ["/cost", "Pricing"],
               ["/gallery", "Gallery"],

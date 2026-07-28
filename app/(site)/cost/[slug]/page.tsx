@@ -10,7 +10,7 @@ import { PageHero } from "@/components/PageHero";
 import { QuoteForm } from "@/components/QuoteForm";
 import { CTABand, ProjectShowcase } from "@/components/sections";
 import { JsonLd } from "@/components/JsonLd";
-import { faqSchema, speakableSchema, breadcrumbSchema } from "@/lib/seo";
+import { faqSchema, speakableSchema, breadcrumbSchema, articleSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
   return costSlugs.map((slug) => ({ slug }));
@@ -34,7 +34,10 @@ export default async function CostPage({ params }: { params: Promise<{ slug: str
   if (!c) notFound();
 
   const related = c.relatedService ? serviceBySlug(c.relatedService) : undefined;
-  const others = costGuides.filter((x) => x.slug !== c.slug).slice(0, 4);
+  /* keep related links inside the same cluster, then top up from the other */
+  const sameCluster = costGuides.filter((x) => x.slug !== c.slug && x.category === c.category);
+  const otherCluster = costGuides.filter((x) => x.slug !== c.slug && x.category !== c.category);
+  const others = [...sameCluster, ...otherCluster].slice(0, 4);
   const crumbs = [
     { name: "Home", url: "/" },
     { name: "Pricing", url: "/cost" },
@@ -46,12 +49,22 @@ export default async function CostPage({ params }: { params: Promise<{ slug: str
       <JsonLd
         data={[
           faqSchema([{ q: c.question, a: c.shortAnswer }]),
+          articleSchema({
+            headline: c.question,
+            description: c.shortAnswer,
+            url: `${site.url}/cost/${c.slug}`,
+            image: related?.photo,
+          }),
           speakableSchema([".speakable"]),
           breadcrumbSchema(crumbs),
         ]}
       />
 
-      <PageHero eyebrow="NJ Cost Guide" title={c.question} breadcrumbs={crumbs} />
+      <PageHero
+        eyebrow={c.category === "price" ? "NJ Cost Guide" : "NJ Buyer's Guide"}
+        title={c.question}
+        breadcrumbs={crumbs}
+      />
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr]">
@@ -71,8 +84,10 @@ export default async function CostPage({ params }: { params: Promise<{ slug: str
                 <table className="w-full text-left">
                   <thead className="bg-navy-50/60 text-sm">
                     <tr>
-                      <th className="px-5 py-3 font-bold text-navy-800">Job</th>
-                      <th className="px-5 py-3 text-right font-bold text-navy-800">Typical price</th>
+                      <th className="px-5 py-3 font-bold text-navy-800">{c.tableHeads?.[0] ?? "Job"}</th>
+                      <th className="px-5 py-3 text-right font-bold text-navy-800">
+                        {c.tableHeads?.[1] ?? "Typical price"}
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-navy-50">
@@ -85,8 +100,9 @@ export default async function CostPage({ params }: { params: Promise<{ slug: str
                   </tbody>
                 </table>
                 <p className="bg-white px-5 py-3 text-xs text-muted">
-                  Ranges reflect typical North Jersey installs. Your exact price depends on the
-                  slab — get a free, firm quote with an on-site visit.
+                  {c.tableHeads
+                    ? "Figures reflect typical North Jersey installs — your floor is quoted on its own condition after an on-site visit."
+                    : "Ranges reflect typical North Jersey installs. Your exact price depends on the slab — get a free, firm quote with an on-site visit."}
                 </p>
               </div>
             )}
@@ -128,7 +144,9 @@ export default async function CostPage({ params }: { params: Promise<{ slug: str
       </Section>
 
       <Section className="bg-navy-50/40">
-        <h2 className="text-2xl font-extrabold text-navy-900">More pricing questions</h2>
+        <h2 className="text-2xl font-extrabold text-navy-900">
+          {c.category === "price" ? "More pricing questions" : "More questions worth asking"}
+        </h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {others.map((o) => (
             <Link key={o.slug} href={`/cost/${o.slug}`} className="card card-hover flex items-center justify-between gap-3 p-5">

@@ -110,7 +110,84 @@ export const services: Service[] = [
     ],
   },
 
-  /* ── 2. Metallic / decorative ───────────────────────────────────── */
+  /* ── 2. Polyaspartic / 1-day coatings ───────────────────────────── */
+  {
+    slug: "polyaspartic-floor-coating",
+    name: "Polyaspartic 1-Day Floor Coatings",
+    shortName: "1-Day Polyaspartic",
+    icon: "bolt",
+    photo: "/photos/garage-floor-coating-nj.webp",
+    priceFrom: 5,
+    priceUnit: "per sq ft",
+    tagline: "Ground in the morning, parked on by the weekend — without cutting corners",
+    hero: "1-Day Polyaspartic Floor Coating in North Jersey",
+    intro:
+      "Polyaspartic is a fast-curing, UV-stable cousin of polyurethane that goes down in hours instead of days. Done properly it gives you a garage floor that's walkable the same evening and ready for tires in about 24 hours — with better cold-weather performance and zero yellowing compared to epoxy alone.",
+    problem:
+      "You need the floor back fast — a car with nowhere else to live, a shop that can't close for three days — but every 'one-day floor' ad sounds too good to be true.",
+    includes: [
+      "Diamond grinding — same full prep, compressed schedule",
+      "Crack and spall repair with fast-set polyurea filler",
+      "Moisture testing before a drop of product is mixed",
+      "Polyaspartic base coat with full-broadcast flake",
+      "UV-stable polyaspartic topcoat — will not amber or yellow",
+      "Lifetime warranty against peeling & delamination",
+    ],
+    surfaces: ["Garages", "Basements", "Patios & porches", "Auto shops", "Retail floors", "Commercial kitchens"],
+    localNote:
+      "Polyaspartic keeps curing in the cold, which matters in North Jersey. Standard epoxy stalls below about 55°F, so from November through March a polyaspartic system is often the only way to get an unheated garage coated at all.",
+    keywords: [
+      "polyaspartic floor coating nj",
+      "1 day garage floor coating north jersey",
+      "one day epoxy garage floor nj",
+      "polyaspartic garage floor new jersey",
+      "polyurea garage floor coating nj",
+    ],
+    popular: true,
+    faq: [
+      {
+        q: "Is a 1-day floor coating actually as good as epoxy?",
+        a: "For the wear layer, polyaspartic is better — it's UV-stable, more flexible in cold, and more abrasion-resistant than epoxy. What it gives up is film thickness per coat, which is why we still spec an epoxy base on floors that need build. On a sound residential slab, a full polyaspartic system is the stronger floor and it's done in a day.",
+      },
+      {
+        q: "How is it done in one day when epoxy takes three?",
+        a: "Chemistry, not shortcuts. Polyaspartic cures in 1–2 hours per coat instead of 12–24, so grinding, base coat, flake broadcast and topcoat all fit inside a single working day. The prep is identical to our epoxy installs — anyone offering a one-day floor without diamond grinding is skipping the part that matters.",
+      },
+      {
+        q: "When can I park on a 1-day polyaspartic floor?",
+        a: "You can walk on it the same evening, usually 4–6 hours after the topcoat. Vehicle traffic is safe after about 24 hours — versus 72 hours for a conventional epoxy build. That's the whole reason people choose it.",
+      },
+      {
+        q: "Can you install polyaspartic in an unheated garage in winter?",
+        a: "Yes, and it's the main reason we carry it. Polyaspartic keeps curing down to roughly 0°F, where epoxy stops setting properly below about 55°F. From November through March, polyaspartic is what lets us keep installing North Jersey garages that have no heat.",
+      },
+    ],
+    pillar: [
+      {
+        h: "What polyaspartic actually is",
+        p: [
+          "Polyaspartic is a polyurea — an aliphatic ester chemistry developed in the 1990s to protect steel bridges from corrosion, then adapted to concrete floors. The property that makes it valuable is cure speed: the reaction can be tuned so a coat sets in one to two hours instead of the twelve to twenty-four an epoxy needs. Stack four fast coats and a floor that used to take three days fits inside one.",
+          "Two other properties matter as much for New Jersey. It's aliphatic, meaning UV-stable — it will never amber or yellow the way an epoxy topcoat does in a garage with a sunny door. And it stays flexible and keeps curing in the cold, which is why it's the only system we'll put in an unheated garage in February.",
+        ],
+      },
+      {
+        h: "The honest tradeoff nobody advertises",
+        p: [
+          "Polyaspartic goes down thinner per coat than 100% solids epoxy and it costs more per gallon. On a slab that needs real build — a pitted warehouse floor, a garage with heavy spalling, anywhere you want serious millage between the concrete and the world — an epoxy base coat is still the better and cheaper way to get there.",
+          "That's why our default recommendation for a residential garage is a hybrid: epoxy base for build and bond, polyaspartic topcoat for UV stability and hot-tire resistance. Full polyaspartic is the right call when speed is the constraint, when it's too cold for epoxy, or when the slab is sound enough that build isn't the issue. We'll tell you which case you're in at the quote — the honest answer is sometimes the cheaper one.",
+        ],
+      },
+      {
+        h: "How to shop a one-day floor quote",
+        p: [
+          "The national franchises advertising one-day floors are selling real chemistry, but the install quality varies enormously by crew. Three questions separate a floor that lasts twenty years from one that peels in two: Do you diamond-grind, or acid-etch? What does the moisture test read? And is the topcoat aliphatic polyaspartic, or a cheaper aromatic polyurea that will yellow?",
+          "Acid etching does not open concrete the way mechanical grinding does, and it's the single most common corner cut on speed-sold floors. We grind every slab, every time — the schedule compresses because of the chemistry, not because we skipped the prep. See the full comparison in our [epoxy vs. polyaspartic guide](/cost/epoxy-vs-polyaspartic).",
+        ],
+      },
+    ],
+  },
+
+  /* ── 3. Metallic / decorative ───────────────────────────────────── */
   {
     slug: "metallic-epoxy-flooring",
     name: "Metallic & Decorative Epoxy",
@@ -155,7 +232,7 @@ export const services: Service[] = [
     ],
   },
 
-  /* ── 3. Flake epoxy systems ─────────────────────────────────────── */
+  /* ── 4. Flake epoxy systems ─────────────────────────────────────── */
   {
     slug: "flake-epoxy-flooring",
     name: "Flake Epoxy Systems",
@@ -199,7 +276,7 @@ export const services: Service[] = [
     ],
   },
 
-  /* ── 4. Commercial ──────────────────────────────────────────────── */
+  /* ── 5. Commercial ──────────────────────────────────────────────── */
   {
     slug: "commercial-epoxy-flooring",
     name: "Commercial Epoxy Flooring",
@@ -245,7 +322,7 @@ export const services: Service[] = [
     ],
   },
 
-  /* ── 5. Industrial ──────────────────────────────────────────────── */
+  /* ── 6. Industrial ──────────────────────────────────────────────── */
   {
     slug: "industrial-epoxy-flooring",
     name: "Industrial Epoxy Flooring",
@@ -290,7 +367,7 @@ export const services: Service[] = [
     ],
   },
 
-  /* ── 6. Basement ────────────────────────────────────────────────── */
+  /* ── 7. Basement ────────────────────────────────────────────────── */
   {
     slug: "basement-epoxy-flooring",
     name: "Basement Epoxy Flooring",
@@ -334,7 +411,7 @@ export const services: Service[] = [
     ],
   },
 
-  /* ── 7. Restaurant / commercial kitchen ─────────────────────────── */
+  /* ── 8. Restaurant / commercial kitchen ─────────────────────────── */
   {
     slug: "restaurant-kitchen-epoxy-flooring",
     name: "Restaurant Kitchen Epoxy",
@@ -376,6 +453,29 @@ export const services: Service[] = [
         a: "Seamless epoxy with integral cove base is exactly what inspectors want to see — no grout lines to trap grease, no wall seam, and a surface that sanitizes completely. It's the standard spec for new commercial kitchens for a reason.",
       },
     ],
+  },
+];
+
+/** The install sequence, as a HowTo. Mirrors the four steps in <Steps /> — keep
+ *  the two in sync. Fed to `howToSchema()` on every service page: rich results
+ *  for HowTo are retired, but the node is still one of the cleanest signals an
+ *  AI answer engine can extract about how we actually do the work. */
+export const installProcess = [
+  {
+    name: "Free on-site assessment",
+    text: "We measure the floor, moisture-test the slab, and bring physical color and flake samples to your space. You get an itemized price on the spot, with any crack or spall repair quoted up front rather than discovered later.",
+  },
+  {
+    name: "Diamond-grind the concrete",
+    text: "Every slab is mechanically ground back to open, bare concrete — removing old coatings, sealers and the weak laitance layer. This is the step DIY kits and cut-rate installers replace with acid etching, and it is the single biggest predictor of how long the floor lasts.",
+  },
+  {
+    name: "Repair and prime",
+    text: "Cracks are routed and filled with structural epoxy, spalls are patched with epoxy mortar, and control joints are treated. Where the moisture test calls for it, a vapor-mitigating primer goes down before any build coat.",
+  },
+  {
+    name: "Build the system and topcoat",
+    text: "A 100% solids epoxy or polyaspartic base goes down, followed by your flake broadcast or hand-worked metallic, then a chemical-resistant topcoat rated for hot-tire pickup. Walk on it in 24 hours, park in 72 — or the same day with a polyaspartic system.",
   },
 ];
 
