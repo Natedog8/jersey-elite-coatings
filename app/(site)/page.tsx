@@ -64,7 +64,7 @@ export default function HomePage() {
             </div>
 
             <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2.5 text-sm text-navy-100">
-              {["Licensed & Insured", "Lifetime Warranty", "10,000+ Projects Since 2010"].map((b) => (
+              {["Licensed & Insured", "Lifetime Warranty", "Serving NJ Since 2010"].map((b) => (
                 <li key={b} className="flex items-center gap-2">
                   <Icon.check className="h-4 w-4 text-aqua-300" /> {b}
                 </li>
@@ -102,7 +102,7 @@ export default function HomePage() {
             <p className="mt-5 text-lg leading-relaxed text-muted">
               We're not a painter with a roller. Jersey Elite Coatings is a licensed &amp;
               insured, locally owned crew that has installed epoxy floors across New Jersey
-              since 2010 — over 10,000 projects from Livingston garages to Newark warehouses.
+              since 2010 — tons of jobs done, from Livingston garages to Newark warehouses.
               Every floor gets diamond-ground preparation, 100% solids commercial-grade
               systems, and a lifetime warranty against peeling and delamination.
             </p>

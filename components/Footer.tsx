@@ -29,7 +29,7 @@ export function Footer() {
           <div className="mt-4 flex items-center gap-1.5 rounded-full bg-white/5 px-3 py-1.5 text-sm w-fit">
             <Icon.star className="h-4 w-4 text-sun-400" />
             <span className="font-bold text-white">{site.rating}★</span>
-            <span className="text-navy-200">· {site.jobsCompleted} floors since 2010</span>
+            <span className="text-navy-200">· tons of floors since 2010</span>
           </div>
         </div>
 

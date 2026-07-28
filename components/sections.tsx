@@ -13,7 +13,7 @@ export function TrustBar() {
     { icon: "star" as const, label: `${site.rating}★ Rated Service`, sub: "Five-star results" },
     { icon: "shield" as const, label: "Licensed & Insured", sub: "COI on request" },
     { icon: "badge" as const, label: "Lifetime Warranty", sub: "Peeling & delamination" },
-    { icon: "clock" as const, label: `${site.jobsCompleted} Projects`, sub: "Since 2010" },
+    { icon: "clock" as const, label: "Tons of Floors Done", sub: "Since 2010" },
   ];
   return (
     <div className="border-y border-navy-50 bg-navy-50/40">

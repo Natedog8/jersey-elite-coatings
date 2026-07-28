@@ -8,13 +8,13 @@ import { actionPhotos, featured } from "@/data/media";
 export const metadata: Metadata = {
   title: "About Us — North Jersey Epoxy Flooring Since 2010",
   description:
-    "Jersey Elite Coatings is a locally owned epoxy flooring company based in Newark, NJ — 10,000+ floors installed across North Jersey since 2010, every one backed by a lifetime warranty.",
+    "Jersey Elite Coatings is a locally owned epoxy flooring company based in Newark, NJ — tons of floors installed across North Jersey since 2010, every one backed by a lifetime warranty.",
   alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
   const stats = [
-    { n: site.jobsCompleted, l: "Projects completed" },
+    { n: "Tons", l: "of floors done" },
     { n: "2010", l: "Serving NJ since" },
     { n: `${site.rating}★`, l: "Rated service" },
     { n: "Lifetime", l: "Adhesion warranty" },
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 delamination.
               </p>
               <p>
-                Since 2010 that approach has carried us through more than 10,000 projects —
+                Since 2010 that approach has carried us through a mountain of projects —
                 showroom garages in Livingston and Ridgewood, finished basements in Montclair,
                 restaurant kitchens in the Ironbound, and warehouse floors from Paterson to
                 Port Newark. Different floors, same system: prep it right, install
